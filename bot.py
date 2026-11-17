@@ -479,6 +479,26 @@ def tick(state, now=None):
     save_state(state)
 
 
+def check_setup():
+    """Qo'lda ishga tushirilganda: token to'g'riligini va botning kanalda
+    post yozish huquqi borligini tekshiradi. Kanalga hech narsa yubormaydi."""
+    api = f"https://api.telegram.org/bot{BOT_TOKEN}"
+    me = requests.get(f"{api}/getMe", timeout=30).json()
+    if not me.get("ok"):
+        sys.exit(f"XATO: BOT_TOKEN noto'g'ri ({me.get('description')}). Secrets'dagi tokenni tekshiring.")
+    bot_id = me["result"]["id"]
+    log(f"Token to'g'ri: @{me['result']['username']}")
+    mem = requests.get(f"{api}/getChatMember",
+                       params={"chat_id": TARGET_CHANNEL, "user_id": bot_id}, timeout=30).json()
+    if not mem.get("ok"):
+        sys.exit(f"XATO: {TARGET_CHANNEL} kanalini ko'ra olmadim ({mem.get('description')}). "
+                 "Botni kanalga admin qilib qo'shing.")
+    r = mem["result"]
+    if r.get("status") != "administrator" or not r.get("can_post_messages"):
+        sys.exit(f"XATO: bot {TARGET_CHANNEL} da admin emas yoki 'Post Messages' huquqi yo'q.")
+    log(f"Bot {TARGET_CHANNEL} kanalida admin, post yozish huquqi bor. Hammasi tayyor ✅")
+
+
 def require_token():
     if not BOT_TOKEN:
         sys.exit("BOT_TOKEN topilmadi. .env faylga yoki GitHub Secrets'ga qo'ying.")
@@ -517,6 +537,8 @@ if __name__ == "__main__":
         dry_run()
     elif "--tick" in sys.argv:      # GitHub Actions: har 15 daqiqada bir marta ishga tushiriladi
         require_token()
+        if os.getenv("GITHUB_EVENT_NAME") == "workflow_dispatch":
+            check_setup()           # qo'lda "Run workflow" bosilganda sozlamalarni tekshirish
         tick(load_state())
     else:
         run_forever()
