@@ -1,0 +1,43 @@
+name: Finder vakansiya boti
+
+on:
+  schedule:
+    # Har 15 daqiqada, Toshkent vaqti bilan 07:07 dan 19:52 gacha (UTC 02:07–14:52)
+    - cron: "7,22,37,52 2-14 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: finder-bot
+  cancel-in-progress: false
+
+jobs:
+  tick:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Botni bir marta ishga tushirish
+        env:
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          START_DATE: ${{ vars.START_DATE }}
+          USD_RATE: ${{ vars.USD_RATE || '12000' }}
+        run: python bot.py --tick
+
+      - name: Holatni (state.json) saqlash
+        run: |
+          git config user.name "finder-bot"
+          git config user.email "finder-bot@users.noreply.github.com"
+          git add state.json
+          git diff --cached --quiet || (git commit -m "bot holati yangilandi" && git push)
