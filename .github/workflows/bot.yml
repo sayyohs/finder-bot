@@ -2,12 +2,12 @@ name: Finder vakansiya boti
 
 on:
   schedule:
-    # Har 15 daqiqada, Toshkent vaqti bilan 07:07 dan 19:52 gacha (UTC 02:07–14:52)
-    - cron: "7,22,37,52 2-14 * * *"
-  workflow_dispatch:
+    # Har 15 daqiqada, kun bo'yi (qo'lda qo'shilgan e'lonlar istalgan vaqtda chiqishi uchun)
+    - cron: "7,22,37,52 * * * *"
+  workflow_dispatch:   # "Run workflow" tugmasi yoki Telegram admin paneli ishga tushiradi
 
 permissions:
-  contents: write
+  contents: write      # state.json ni saqlash uchun
 
 concurrency:
   group: finder-bot
@@ -40,4 +40,8 @@ jobs:
           git config user.name "finder-bot"
           git config user.email "finder-bot@users.noreply.github.com"
           git add state.json
-          git diff --cached --quiet || (git commit -m "bot holati yangilandi" && git push)
+          git diff --cached --quiet && exit 0
+          git commit -m "bot holati yangilandi"
+          # admin panel shu orada boshqa fayllarni o'zgartirgan bo'lishi mumkin
+          for i in 1 2 3; do git pull --rebase && git push && exit 0; sleep 5; done
+          exit 1
