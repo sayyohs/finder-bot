@@ -2,5 +2,9 @@
  "posted": {},
  "queue": [],
  "queue_date": null,
- "last_sent": null
+ "last_sent": null,
+ "history": [],
+ "manual_done": {},
+ "now_done": [],
+ "rebuild_done": null
 }
