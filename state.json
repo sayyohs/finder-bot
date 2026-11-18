@@ -6,5 +6,8 @@
  "history": [],
  "manual_done": {},
  "now_done": [],
- "rebuild_done": null
+ "rebuild_done": null,
+ "next_queue": [],
+ "next_date": null,
+ "tomorrow_done": null
 }
