@@ -51,6 +51,7 @@ CONFIG_FILE = BASE / "config.json"       # Telegram admin panel yozadi, bot o'qi
 MANUAL_FILE = BASE / "manual.json"       # qo'lda qo'shilgan e'lonlar (panel yozadi)
 OVERRIDES_FILE = BASE / "overrides.json" # o'tkazib yuborish / tahrir / hozir yuborish (panel yozadi)
 MAX_POSTS = 11
+EVENING_PLAN_AT = None   # masalan "21:00": har kuni kechqurun ertangi reja oldindan tuziladi
 PAUSED = False
 ADMINS = []
 BLACKLIST = []
@@ -77,7 +78,8 @@ def load_json(path, default):
 def load_state():
     st = load_json(STATE_FILE, {})
     for k, v in (("posted", {}), ("queue", []), ("queue_date", None), ("last_sent", None),
-                 ("history", []), ("manual_done", {}), ("now_done", []), ("rebuild_done", None)):
+                 ("history", []), ("manual_done", {}), ("now_done", []), ("rebuild_done", None),
+                 ("next_queue", []), ("next_date", None), ("tomorrow_done", None)):
         st.setdefault(k, v)
     return st
 
@@ -91,6 +93,7 @@ def apply_config():
     """config.json dagi sozlamalarni (admin paneldan o'zgartirilgan) qo'llaydi."""
     global SOURCE_CHANNELS, FIRST_POST, LAST_POST, MIN_POSTS, MAX_POSTS, MIN_GAP_MIN
     global GOOD_SALARY, MIN_SALARY, USD_RATE, FOOTER, EXCLUDE_TITLE, PAUSED, ADMINS, BLACKLIST
+    global EVENING_PLAN_AT
     c = load_json(CONFIG_FILE, {})
     try:
         SOURCE_CHANNELS = [x.lstrip("@") for x in c.get("channels", SOURCE_CHANNELS)]
@@ -106,6 +109,7 @@ def apply_config():
         if c.get("exclude_words") is not None:
             EXCLUDE_TITLE = words_regex(c["exclude_words"])
         PAUSED = bool(c.get("paused", False))
+        EVENING_PLAN_AT = _hm(c["evening_plan_at"]) if c.get("evening_plan_at") else None
         ADMINS = [int(x) for x in c.get("admins", [])]
         BLACKLIST = [w.lower() for w in c.get("blacklist", []) if w.strip()]
     except Exception as ex:
@@ -443,7 +447,8 @@ def collect(state):
             if score < MIN_SALARY:
                 continue
             fp = fingerprint(p["text"])
-            if fp in state["posted"] or any(c["fp"] == fp for c in cands):
+            queued = {q["fp"] for q in state.get("queue", []) + state.get("next_queue", [])}
+            if fp in state["posted"] or fp in queued or any(c["fp"] == fp for c in cands):
                 continue
             cands.append({"src": p["id"], "fp": fp, "score": score,
                           "lo": lo, "hi": hi, "raw": raw, "text": p["text"]})
@@ -470,12 +475,12 @@ def plan_times(n, day, earliest=None):
     return times
 
 
-def build_day_queue(state, day):
+def build_day_queue(state, day, earliest="now"):
     cands = collect(state)
     good = [c for c in cands if c["score"] >= GOOD_SALARY]
     n = min(max(MIN_POSTS, len(good)), MAX_POSTS)
     chosen = cands[:n]
-    times = plan_times(len(chosen), day, earliest=datetime.now(TZ))
+    times = plan_times(len(chosen), day, earliest=datetime.now(TZ) if earliest == "now" else earliest)
     chosen = chosen[:len(times)]
     queue = []
     for c, t in zip(chosen, times):
@@ -538,9 +543,17 @@ def _deliver(state, now, item, kind, edits):
     add_history(state, now, body, "sent", kind)
     if kind == "auto":
         state["posted"][item["fp"]] = now.date().isoformat()
-        state["queue"].remove(item)
+        for key in ("queue", "next_queue"):
+            if item in state[key]:
+                state[key].remove(item)
     else:
         state["manual_done"][item["id"]] = "sent"
+
+
+def plan_text(header, queue):
+    lines = [f"{datetime.fromisoformat(q['at']).strftime('%H:%M')} — {html.escape(q['title'])} "
+             f"({html.escape(q['salary'])})" for q in queue]
+    return f"<b>{header} — {len(lines)} ta post</b>\n\n" + ("\n".join(lines) or "Mos e'lon topilmadi.")
 
 
 def tick(state, now=None):
@@ -557,7 +570,7 @@ def tick(state, now=None):
     last_time = now.replace(hour=LAST_POST[0], minute=LAST_POST[1], second=0, microsecond=0)
 
     # kecha yuborilmay qolganlar bugun chiqmaydi
-    if state.get("queue_date") and state["queue_date"] != today and state.get("queue"):
+    if state.get("queue_date") and state["queue_date"] < today and state.get("queue"):
         log(f"Kechagi {len(state['queue'])} ta yuborilmagan post bekor qilindi")
         state["queue"] = []
 
@@ -566,27 +579,56 @@ def tick(state, now=None):
         save_state(state)
         return
 
-    # kunlik reja yoki admin so'ragan qayta tuzish
     started = not START_DATE or today >= START_DATE
-    need = state.get("queue_date") != today and collect_time <= now < last_time and started
+    tomorrow_day = now + timedelta(days=1)
+    tomorrow = tomorrow_day.date().isoformat()
+
+    # oldindan tuzilgan ertangi reja bugun boshlanadi
+    if state.get("next_date") == today:
+        state["queue"] = state["next_queue"]
+        state["queue_date"] = today
+        state["next_queue"], state["next_date"] = [], None
+        log(f"Oldindan tuzilgan reja ishga tushdi: {len(state['queue'])} ta post")
+    elif state.get("next_date") and state["next_date"] < today:
+        state["next_queue"], state["next_date"] = [], None
+
+    # kunlik reja yoki admin so'ragan qayta tuzish
+    need = ((not state.get("queue_date") or state["queue_date"] < today)
+            and collect_time <= now < last_time and started)
     token = ov.get("rebuild")
     if token and token != state.get("rebuild_done") and now < last_time and started:
         need = True
         state["rebuild_done"] = token
     if need:
+        state["queue"] = []
         state["queue"] = build_day_queue(state, now)
         state["queue_date"] = today
-        lines = [f"{datetime.fromisoformat(q['at']).strftime('%H:%M')} — {html.escape(q['title'])} "
-                 f"({html.escape(q['salary'])})" for q in state["queue"]]
-        notify(f"📋 <b>Bugungi reja ({len(lines)} ta post)</b>\n\n" + "\n".join(lines))
+        notify(plan_text("📋 Bugungi reja", state["queue"]))
+
+    # ertangi reja: admin so'raganda yoki kechqurun avtomatik
+    ttoken = ov.get("plan_tomorrow")
+    want_t = bool(ttoken and ttoken != state.get("tomorrow_done"))
+    if want_t:
+        state["tomorrow_done"] = ttoken
+    if EVENING_PLAN_AT and state.get("next_date") != tomorrow:
+        if now >= now.replace(hour=EVENING_PLAN_AT[0], minute=EVENING_PLAN_AT[1], second=0, microsecond=0):
+            want_t = True
+    if want_t and (not START_DATE or tomorrow >= START_DATE):
+        state["next_queue"] = []
+        state["next_queue"] = build_day_queue(state, tomorrow_day, earliest=None)
+        state["next_date"] = tomorrow
+        notify(plan_text(f"📅 Ertangi reja ({tomorrow_day.strftime('%d.%m')})", state["next_queue"]) +
+               "\n\nPanelda <b>📅 Ertangi reja</b> orqali ko'rib, tahrirlashingiz mumkin.")
 
     # admin o'tkazib yuborganlar
     skip = set(ov.get("skip", []))
-    for q in list(state["queue"]):
-        if q["fp"][:16] in skip:
-            state["queue"].remove(q)
-            add_history(state, now, q, "skipped", "auto")
-            log("Admin o'tkazib yubordi:", q["src"])
+    for key in ("queue", "next_queue"):
+        for q in list(state[key]):
+            if q["fp"][:16] in skip:
+                state[key].remove(q)
+                state["posted"][q["fp"]] = today   # keyingi rejalarga ham qayta tushmasin
+                add_history(state, now, q, "skipped", "auto")
+                log("Admin o'tkazib yubordi:", q["src"])
 
     # qo'lda e'lonlar: 24 soatdan ko'p kechikkanlari bekor
     pending_manual = []
@@ -607,7 +649,7 @@ def tick(state, now=None):
         item = next((m for m in pending_manual if m["id"] == nid), None)
         kind = "manual"
         if not item:
-            item = next((q for q in state["queue"] if q["fp"][:16] == nid), None)
+            item = next((q for q in state["queue"] + state["next_queue"] if q["fp"][:16] == nid), None)
             kind = "auto"
         if not item:
             continue
