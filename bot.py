@@ -45,7 +45,15 @@ BOT_TOKEN = os.getenv("BOT_TOKEN", "")
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")   # ixtiyoriy: AI bilan chiroyliroq formatlash
 ANTHROPIC_MODEL = os.getenv("ANTHROPIC_MODEL", "claude-haiku-5-5")
 
-STATE_FILE = Path(__file__).with_name("state.json")
+BASE = Path(__file__).parent
+STATE_FILE = BASE / "state.json"
+CONFIG_FILE = BASE / "config.json"       # Telegram admin panel yozadi, bot o'qiydi
+MANUAL_FILE = BASE / "manual.json"       # qo'lda qo'shilgan e'lonlar (panel yozadi)
+OVERRIDES_FILE = BASE / "overrides.json" # o'tkazib yuborish / tahrir / hozir yuborish (panel yozadi)
+MAX_POSTS = 11
+PAUSED = False
+ADMINS = []
+BLACKLIST = []
 FOOTER = (
     "📩 <b>Kanalga eʼlon joylash 👉</b> @Khazratov\n\n"
     "📌 @Finderuz — eng yuqori maoshlar!"
@@ -57,10 +65,52 @@ def log(*a):
     print(datetime.now(TZ).strftime("%Y-%m-%d %H:%M:%S"), *a, flush=True)
 
 
+def load_json(path, default):
+    try:
+        if path.exists():
+            return json.loads(path.read_text("utf-8"))
+    except Exception as ex:
+        log(f"{path.name} o'qilmadi:", ex)
+    return default
+
+
 def load_state():
-    if STATE_FILE.exists():
-        return json.loads(STATE_FILE.read_text("utf-8"))
-    return {"posted": {}, "queue": [], "queue_date": None, "last_sent": None}
+    st = load_json(STATE_FILE, {})
+    for k, v in (("posted", {}), ("queue", []), ("queue_date", None), ("last_sent", None),
+                 ("history", []), ("manual_done", {}), ("now_done", []), ("rebuild_done", None)):
+        st.setdefault(k, v)
+    return st
+
+
+def _hm(s):
+    h, m = str(s).split(":")
+    return int(h), int(m)
+
+
+def apply_config():
+    """config.json dagi sozlamalarni (admin paneldan o'zgartirilgan) qo'llaydi."""
+    global SOURCE_CHANNELS, FIRST_POST, LAST_POST, MIN_POSTS, MAX_POSTS, MIN_GAP_MIN
+    global GOOD_SALARY, MIN_SALARY, USD_RATE, FOOTER, EXCLUDE_TITLE, PAUSED, ADMINS, BLACKLIST
+    c = load_json(CONFIG_FILE, {})
+    try:
+        SOURCE_CHANNELS = [x.lstrip("@") for x in c.get("channels", SOURCE_CHANNELS)]
+        if c.get("first_post"): FIRST_POST = _hm(c["first_post"])
+        if c.get("last_post"): LAST_POST = _hm(c["last_post"])
+        MIN_POSTS = int(c.get("min_posts", MIN_POSTS))
+        MAX_POSTS = int(c.get("max_posts", MAX_POSTS))
+        MIN_GAP_MIN = int(c.get("min_gap", MIN_GAP_MIN))
+        GOOD_SALARY = float(c.get("good_salary", GOOD_SALARY))
+        MIN_SALARY = float(c.get("min_salary", MIN_SALARY))
+        USD_RATE = float(c.get("usd_rate", USD_RATE))
+        FOOTER = c.get("footer", FOOTER)
+        if c.get("exclude_words") is not None:
+            EXCLUDE_TITLE = words_regex(c["exclude_words"])
+        PAUSED = bool(c.get("paused", False))
+        ADMINS = [int(x) for x in c.get("admins", [])]
+        BLACKLIST = [w.lower() for w in c.get("blacklist", []) if w.strip()]
+    except Exception as ex:
+        log("config.json da xato, standart sozlamalar ishlatiladi:", ex)
+    return c
 
 
 def save_state(st):
@@ -343,13 +393,20 @@ def to_template(text, lo, hi, raw_salary):
 SKIP = re.compile(r"^(ish joyi kerak|ustoz kerak|shogird kerak|sherik kerak)", re.I)
 
 # Qabul qilinmaydigan sohalar (sarlavha bo'yicha tekshiriladi): sotuv va dasturlash
-EXCLUDE_TITLE = re.compile(
-    r"sotuv|savdo|sotuvchi|sales|b2b|продаж|продав|кассир|konsultant|консультант"
-    r"|dasturchi|dasturlash|developer|frontend|front-end|backend|back-end|full\s*stack|fullstack"
-    r"|python|java|php|flutter|react|node|devops|qa engineer|tester|программист|разработчик"
-    r"|it mentor|frontend mentor|backend mentor",
-    re.I,
-)
+DEFAULT_EXCLUDE = [
+    "sotuv", "savdo", "sotuvchi", "sales", "b2b", "продаж", "продав", "кассир", "konsultant", "консультант",
+    "dasturchi", "dasturlash", "developer", "frontend", "front-end", "backend", "back-end", "full stack",
+    "fullstack", "python", "java", "php", "flutter", "react", "node", "devops", "qa engineer", "tester",
+    "программист", "разработчик", "it mentor",
+]
+
+
+def words_regex(words):
+    parts = [re.escape(w.strip().lower()).replace(r"\ ", r"\s*") for w in words if w.strip()]
+    return re.compile("|".join(parts) if parts else r"(?!x)x", re.I)
+
+
+EXCLUDE_TITLE = words_regex(DEFAULT_EXCLUDE)
 
 
 def is_excluded(text):
@@ -374,6 +431,9 @@ def collect(state):
             continue
         for p in posts:
             if p["date"] < since or SKIP.match(p["text"].strip()) or is_excluded(p["text"]):
+                continue
+            low = p["text"].lower()
+            if any(w in low for w in BLACKLIST):
                 continue
             sal, raw = find_salary(p["text"])
             if not sal:
@@ -413,14 +473,15 @@ def plan_times(n, day, earliest=None):
 def build_day_queue(state, day):
     cands = collect(state)
     good = [c for c in cands if c["score"] >= GOOD_SALARY]
-    n = max(MIN_POSTS, len(good))
+    n = min(max(MIN_POSTS, len(good)), MAX_POSTS)
     chosen = cands[:n]
     times = plan_times(len(chosen), day, earliest=datetime.now(TZ))
     chosen = chosen[:len(times)]
     queue = []
     for c, t in zip(chosen, times):
-        queue.append({"at": t.isoformat(), "src": c["src"], "fp": c["fp"],
-                      "html": to_template(c["text"], c["lo"], c["hi"], c["raw"])})
+        h = to_template(c["text"], c["lo"], c["hi"], c["raw"])
+        queue.append({"at": t.isoformat(), "src": c["src"], "fp": c["fp"], "html": h,
+                      "title": html_title(h), "salary": salary_text(c["lo"], c["hi"], c["raw"])})
     log(f"{len(cands)} ta nomzod, {len(queue)} ta post rejalashtirildi:",
         ", ".join(datetime.fromisoformat(q["at"]).strftime("%H:%M") for q in queue))
     return queue
@@ -428,22 +489,70 @@ def build_day_queue(state, day):
 
 # ============================ YUBORISH ============================
 
-def send(html_text):
-    r = requests.post(
-        f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage",
-        json={"chat_id": TARGET_CHANNEL, "text": html_text, "parse_mode": "HTML",
-              "disable_web_page_preview": True},
-        timeout=30,
-    )
+def html_title(h):
+    first = re.sub(r"<[^>]+>", "", h.split("\n")[0])
+    return html.unescape(first).replace("❗️", "").strip()[:80]
+
+
+def tg(method, payload):
+    r = requests.post(f"https://api.telegram.org/bot{BOT_TOKEN}/{method}", json=payload, timeout=30)
     if not r.ok:
         raise RuntimeError(r.text)
+    return r.json()
+
+
+def send(item):
+    """Kanalga yuboradi. item: {"html": ..., "photo": file_id (ixtiyoriy)}"""
+    if isinstance(item, str):
+        item = {"html": item}
+    if item.get("photo"):
+        tg("sendPhoto", {"chat_id": TARGET_CHANNEL, "photo": item["photo"],
+                         "caption": item["html"], "parse_mode": "HTML"})
+    else:
+        tg("sendMessage", {"chat_id": TARGET_CHANNEL, "text": item["html"], "parse_mode": "HTML",
+                           "disable_web_page_preview": True})
+
+
+def notify(text):
+    """Adminlarga shaxsiy xabar (kunlik reja, xatolar)."""
+    for a in ADMINS:
+        try:
+            tg("sendMessage", {"chat_id": a, "text": text, "parse_mode": "HTML",
+                               "disable_web_page_preview": True})
+        except Exception as ex:
+            log("Adminga xabar yuborilmadi:", ex)
+
+
+def add_history(state, now, item, status, kind):
+    state["history"].append({"at": now.isoformat(), "title": item.get("title") or html_title(item["html"]),
+                             "src": item.get("src", "qo'lda"), "status": status, "kind": kind})
+
+
+def _deliver(state, now, item, kind, edits):
+    body = dict(item)
+    if kind == "auto" and edits.get(item["fp"][:16]):
+        body["html"] = edits[item["fp"][:16]]
+    send(body)
+    log("Yuborildi:", item.get("src") or item.get("id"))
+    state["last_sent"] = now.isoformat()
+    add_history(state, now, body, "sent", kind)
+    if kind == "auto":
+        state["posted"][item["fp"]] = now.date().isoformat()
+        state["queue"].remove(item)
+    else:
+        state["manual_done"][item["id"]] = "sent"
 
 
 def tick(state, now=None):
-    """Bir martalik tekshiruv: kerak bo'lsa kunlik navbatni tuzadi va vaqti kelgan
-    bitta postni yuboradi (oldingi postdan kamida MIN_GAP_MIN daqiqa o'tgan bo'lsa)."""
+    """Bir martalik tekshiruv: kerak bo'lsa kunlik rejani tuzadi va vaqti kelgan postni
+    yuboradi (oldingi postdan kamida MIN_GAP_MIN daqiqa o'tgan bo'lsa).
+    Admin panel buyruqlari (manual.json, overrides.json, config.json) shu yerda bajariladi."""
+    apply_config()
     now = now or datetime.now(TZ)
     today = now.date().isoformat()
+    manual = load_json(MANUAL_FILE, [])
+    ov = load_json(OVERRIDES_FILE, {})
+    edits = ov.get("edit", {})
     collect_time = now.replace(hour=COLLECT_AT[0], minute=COLLECT_AT[1], second=0, microsecond=0)
     last_time = now.replace(hour=LAST_POST[0], minute=LAST_POST[1], second=0, microsecond=0)
 
@@ -452,30 +561,88 @@ def tick(state, now=None):
         log(f"Kechagi {len(state['queue'])} ta yuborilmagan post bekor qilindi")
         state["queue"] = []
 
-    if (state.get("queue_date") != today and collect_time <= now < last_time
-            and (not START_DATE or today >= START_DATE)):
+    if PAUSED:
+        log("Bot pauzada (admin panel). Hech narsa yuborilmaydi.")
+        save_state(state)
+        return
+
+    # kunlik reja yoki admin so'ragan qayta tuzish
+    started = not START_DATE or today >= START_DATE
+    need = state.get("queue_date") != today and collect_time <= now < last_time and started
+    token = ov.get("rebuild")
+    if token and token != state.get("rebuild_done") and now < last_time and started:
+        need = True
+        state["rebuild_done"] = token
+    if need:
         state["queue"] = build_day_queue(state, now)
         state["queue_date"] = today
+        lines = [f"{datetime.fromisoformat(q['at']).strftime('%H:%M')} — {html.escape(q['title'])} "
+                 f"({html.escape(q['salary'])})" for q in state["queue"]]
+        notify(f"📋 <b>Bugungi reja ({len(lines)} ta post)</b>\n\n" + "\n".join(lines))
 
-    due = [q for q in state.get("queue", []) if datetime.fromisoformat(q["at"]) <= now]
+    # admin o'tkazib yuborganlar
+    skip = set(ov.get("skip", []))
+    for q in list(state["queue"]):
+        if q["fp"][:16] in skip:
+            state["queue"].remove(q)
+            add_history(state, now, q, "skipped", "auto")
+            log("Admin o'tkazib yubordi:", q["src"])
+
+    # qo'lda e'lonlar: 24 soatdan ko'p kechikkanlari bekor
+    pending_manual = []
+    for m in manual:
+        if m.get("status") == "draft" or m["id"] in state["manual_done"]:
+            continue
+        at = datetime.fromisoformat(m["at"])
+        if now - at > timedelta(hours=24):
+            state["manual_done"][m["id"]] = "expired"
+            continue
+        pending_manual.append(m)
+
+    # "Hozir yuborish" — oraliq qoidasiga qaramaydi
+    for nid in ov.get("now", []):
+        if nid in state["now_done"]:
+            continue
+        state["now_done"].append(nid)
+        item = next((m for m in pending_manual if m["id"] == nid), None)
+        kind = "manual"
+        if not item:
+            item = next((q for q in state["queue"] if q["fp"][:16] == nid), None)
+            kind = "auto"
+        if not item:
+            continue
+        try:
+            _deliver(state, now, item, kind, edits)
+            if kind == "manual":
+                pending_manual.remove(item)
+            notify(f"🚀 Yuborildi: {html.escape(item.get('title') or html_title(item['html']))}")
+        except Exception as ex:
+            log("Yuborishda xato:", ex)
+            notify(f"⚠️ Yuborishda xato: {html.escape(str(ex))[:300]}")
+
+    # navbatdagi post (qo'lda qo'shilganlar oldin)
+    due = [("manual", m) for m in sorted(pending_manual, key=lambda m: m["at"])
+           if datetime.fromisoformat(m["at"]) <= now]
+    due += [("auto", q) for q in state["queue"] if datetime.fromisoformat(q["at"]) <= now]
     last_sent = state.get("last_sent")
     gap_ok = (not last_sent or
               now - datetime.fromisoformat(last_sent) >= timedelta(minutes=MIN_GAP_MIN))
     if due and gap_ok:
-        item = due[0]
+        kind, item = due[0]
         try:
-            send(item["html"])
-            log("Yuborildi:", item["src"])
-            state["posted"][item["fp"]] = today
-            state["last_sent"] = now.isoformat()
-            state["queue"].remove(item)
+            _deliver(state, now, item, kind, edits)
+            if kind == "manual":
+                notify(f"✅ Qo'lda qo'shilgan e'lon chiqdi: {html.escape(item.get('title') or html_title(item['html']))}")
         except Exception as ex:
             log("Yuborishda xato (keyingi safar qayta uriniladi):", ex)
+            notify(f"⚠️ Yuborishda xato (keyingi safar qayta uriniladi):\n{html.escape(str(ex))[:300]}")
     elif due:
-        log("Post vaqti keldi, lekin oldingi postdan hali 1 soat o'tmadi - kutilmoqda")
+        log("Post vaqti keldi, lekin oldingi postdan hali yetarli vaqt o'tmadi - kutilmoqda")
 
     cutoff = (now - timedelta(days=14)).date().isoformat()
     state["posted"] = {k: v for k, v in state["posted"].items() if v >= cutoff}
+    state["history"] = [h for h in state["history"] if h["at"][:10] >= cutoff][-300:]
+    state["now_done"] = state["now_done"][-200:]
     save_state(state)
 
 
@@ -515,6 +682,7 @@ def run_forever():
 
 
 def dry_run():
+    apply_config()
     state = load_state()
     queue = build_day_queue(state, datetime.now(TZ) + timedelta(days=0))
     for q in queue:
