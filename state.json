@@ -3,20 +3,12 @@
   "ad374943d74c11dad77e98fc63cc9594": "2026-11-19",
   "a3ad47c2a5e365bfa6819144d51d8a6b": "2026-11-19",
   "f89831d95da5e50c72dca7057f8a4b5e": "2026-11-19",
-  "31b65c616cdd82d9fd360c61335f09c0": "2026-11-19"
+  "31b65c616cdd82d9fd360c61335f09c0": "2026-11-19",
+  "94e3c32633a40f509376c1469a1aaae9": "2026-11-19"
  },
- "queue": [
-  {
-   "at": "2026-11-19T19:00:00+05:00",
-   "src": "kasbim_uz/11123",
-   "fp": "94e3c32633a40f509376c1469a1aaae9",
-   "html": "<b>❗️ Call-markaz operatori kerak</b>\n\n— <b>Korxona</b>: GOLDEN TEAM JAMOASI\n— <b>Manzil</b>: Toshkent shahri\n— <b>Ish grafigi</b>: suhbat asosida\n— <b>Oylik maosh</b>: 6 000 000 dan 7 000 000 gacha\n— <b>Telefon</b>: +998948307000\n— <b>Telegram</b>: @SoxibSuxrob\n\n📩 <b>Kanalga eʼlon joylash 👉</b> @Khazratov\n\n📌 @Finderuz — eng yuqori maoshlar!",
-   "title": "Call-markaz operatori kerak",
-   "salary": "6 000 000 dan 7 000 000 gacha"
-  }
- ],
+ "queue": [],
  "queue_date": "2026-11-19",
- "last_sent": "2026-11-19T14:39:48.884525+05:00",
+ "last_sent": "2026-11-19T16:51:06.422684+05:00",
  "history": [
   {
    "at": "2026-11-19T08:21:14.633200+05:00",
@@ -45,6 +37,13 @@
    "src": "kasbim_uz/11121",
    "status": "sent",
    "kind": "auto"
+  },
+  {
+   "at": "2026-11-19T16:51:06.422684+05:00",
+   "title": "Call-markaz operatori kerak",
+   "src": "kasbim_uz/11123",
+   "status": "sent",
+   "kind": "auto"
   }
  ],
  "manual_done": {},
@@ -52,7 +51,8 @@
   "ad374943d74c11da",
   "a3ad47c2a5e365bf",
   "f89831d95da5e50c",
-  "31b65c616cdd82d9"
+  "31b65c616cdd82d9",
+  "94e3c32633a40f50"
  ],
  "rebuild_done": null,
  "next_queue": [],
