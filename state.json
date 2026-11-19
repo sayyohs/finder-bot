@@ -1,14 +1,8 @@
 {
- "posted": {},
+ "posted": {
+  "ad374943d74c11dad77e98fc63cc9594": "2026-11-19"
+ },
  "queue": [
-  {
-   "at": "2026-11-19T09:00:00+05:00",
-   "src": "rizqimuz/10541",
-   "fp": "ad374943d74c11dad77e98fc63cc9594",
-   "html": "<b>❗️ Call operator kerak</b>\n\n— <b>Korxona</b>: YouVisa Consulting\n— <b>Manzil</b>: Toshkent shahri Yunusobod tuman\n— <b>Ish grafigi</b>: 9:00-18:00\n— <b>Oylik maosh</b>: 2 500 000 dan 150 000 000 gacha (fiks + KPI)\n— <b>Telefon</b>: 916031334\n— <b>Telegram</b>: @Dilshodovmirzo\n\n<b>🔻</b> <b>Talablar</b>:\n— O’z ustida doimiy ishlash va izlanish\n— Ma’suliyatli bo’lish\n— Sotuv Sohasida ishlagan bo’lsa va Rus Tilini bilsa katta ustunlikka ega bo’ladi\n— CRM va leadlar bilan ishlay olishi kerak\n— Sohada o&#x27;sish uchun imkoniyat va treyninglar\n\n📩 <b>Kanalga eʼlon joylash 👉</b> @Khazratov\n\n📌 @Finderuz — eng yuqori maoshlar!",
-   "title": "Call operator kerak",
-   "salary": "2 500 000 dan 150 000 000 gacha (fiks + KPI)"
-  },
   {
    "at": "2026-11-19T11:30:00+05:00",
    "src": "rizqimuz/10533",
@@ -43,10 +37,20 @@
   }
  ],
  "queue_date": "2026-11-19",
- "last_sent": null,
- "history": [],
+ "last_sent": "2026-11-19T08:21:14.633200+05:00",
+ "history": [
+  {
+   "at": "2026-11-19T08:21:14.633200+05:00",
+   "title": "Call operator kerak",
+   "src": "rizqimuz/10541",
+   "status": "sent",
+   "kind": "auto"
+  }
+ ],
  "manual_done": {},
- "now_done": [],
+ "now_done": [
+  "ad374943d74c11da"
+ ],
  "rebuild_done": null,
  "next_queue": [],
  "next_date": null,
