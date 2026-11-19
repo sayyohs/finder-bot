@@ -1,16 +1,9 @@
 {
  "posted": {
-  "ad374943d74c11dad77e98fc63cc9594": "2026-11-19"
+  "ad374943d74c11dad77e98fc63cc9594": "2026-11-19",
+  "a3ad47c2a5e365bfa6819144d51d8a6b": "2026-11-19"
  },
  "queue": [
-  {
-   "at": "2026-11-19T11:30:00+05:00",
-   "src": "rizqimuz/10533",
-   "fp": "a3ad47c2a5e365bfa6819144d51d8a6b",
-   "html": "<b>❗️ Video montajyor kerak</b>\n\n— <b>Korxona</b>: RIYA PLAY platformasi\n— <b>Manzil</b>: Toshkent shahri, Olmazor city\n— <b>Oylik maosh</b>: 5 000 000 dan 12 000 000 gacha\n— <b>Telefon</b>: (telegramdan yozing)\n— <b>Telegram</b>: @bek_administrator\n\n<b>🔻</b> <b>Talablar</b>:\n— 17-25 yoshli yigitlar\n— Premiere pro va After Effects da ishlashni bilish kerak\n\n📩 <b>Kanalga eʼlon joylash 👉</b> @Khazratov\n\n📌 @Finderuz — eng yuqori maoshlar!",
-   "title": "Video montajyor kerak",
-   "salary": "5 000 000 dan 12 000 000 gacha"
-  },
   {
    "at": "2026-11-19T14:00:00+05:00",
    "src": "rizqimuz/10531",
@@ -37,7 +30,7 @@
   }
  ],
  "queue_date": "2026-11-19",
- "last_sent": "2026-11-19T08:21:14.633200+05:00",
+ "last_sent": "2026-11-19T11:35:45.876510+05:00",
  "history": [
   {
    "at": "2026-11-19T08:21:14.633200+05:00",
@@ -45,11 +38,19 @@
    "src": "rizqimuz/10541",
    "status": "sent",
    "kind": "auto"
+  },
+  {
+   "at": "2026-11-19T11:35:45.876510+05:00",
+   "title": "Video montajyor kerak",
+   "src": "rizqimuz/10533",
+   "status": "sent",
+   "kind": "auto"
   }
  ],
  "manual_done": {},
  "now_done": [
-  "ad374943d74c11da"
+  "ad374943d74c11da",
+  "a3ad47c2a5e365bf"
  ],
  "rebuild_done": null,
  "next_queue": [],
