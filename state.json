@@ -4,17 +4,11 @@
   "a3ad47c2a5e365bfa6819144d51d8a6b": "2026-11-19",
   "f89831d95da5e50c72dca7057f8a4b5e": "2026-11-19",
   "31b65c616cdd82d9fd360c61335f09c0": "2026-11-19",
-  "94e3c32633a40f509376c1469a1aaae9": "2026-11-19"
+  "94e3c32633a40f509376c1469a1aaae9": "2026-11-19",
+  "caaf4d6aa9a151ebb50071e526680496": "2026-11-20",
+  "de21f447f9bd55603e47c6ca2c4dbed1": "2026-11-20"
  },
  "queue": [
-  {
-   "at": "2026-11-20T09:00:00+05:00",
-   "src": "rizqimuz/10553",
-   "fp": "de21f447f9bd55603e47c6ca2c4dbed1",
-   "html": "<b>❗️ Kontent maker kerak</b>\n\n— <b>Korxona</b>: Ta’lim loyihasi\n— <b>Manzil</b>: Toshkent shahri, Chilonzor tumani\n— <b>Oylik maosh</b>: 6 000 000 dan 12 000 000 gacha\n— <b>Telefon</b>: +998508861944\n— <b>Telegram</b>: @behru_zssem\n\n<b>🔻</b> <b>Talablar</b>:\n— In house ishlay olish, ijtimoiy tarmoqlar uchun kontent g’oyalari va ssenariylar tayyorlay olish. Video syomka ko’nikmalariga ega bo’lish nomzod uchun qo’shimcha afzallik beradi\n\n📩 <b>Kanalga eʼlon joylash 👉</b> @Khazratov\n\n📌 @Finderuz — eng yuqori maoshlar!",
-   "title": "Kontent maker kerak",
-   "salary": "6 000 000 dan 12 000 000 gacha"
-  },
   {
    "at": "2026-11-20T11:30:00+05:00",
    "src": "rizqimuz/10549",
@@ -38,18 +32,10 @@
    "html": "<b>❗️ Video operator kerak</b>\n\n— <b>Korxona</b>: Registon maktabi\n— <b>Manzil</b>: Tinchlik filial.\n— <b>Ish grafigi</b>: 09:00 - 18:00\n— <b>Oylik maosh</b>: 7 000 000 dan 9 000 000 gacha\n— <b>Telefon</b>: +998773702700\n— <b>Telegram</b>: @RegistanHR_admin\n\n<b>🔻</b> <b>Talablar</b>:\n— Videomontaj va  suratga olish bo‘yicha amaliy tajribaga ega bo‘lishi\n— Adobe Premiere Pro, After Effects o‘xshash dasturlarni yaxshi bilishi\n— O‘z ishlaridan namunalar (portfolio) mavjud bo‘lishi\n— Berilgan vazifalarni o&#x27;z vaqtida topshirishi.\n— – Tajriba 6 oy -1 yil\n\n📩 <b>Kanalga eʼlon joylash 👉</b> @Khazratov\n\n📌 @Finderuz — eng yuqori maoshlar!",
    "title": "Video operator kerak",
    "salary": "7 000 000 dan 9 000 000 gacha"
-  },
-  {
-   "at": "2026-11-20T19:00:00+05:00",
-   "src": "kasbim_uz/11130",
-   "fp": "caaf4d6aa9a151ebb50071e526680496",
-   "html": "<b>❗️ Агроном kerak</b>\n\n— <b>Korxona</b>: KLYBECK Life Scienses\n— <b>Manzil</b>: г. Ташкент, Нукусская 1\n— <b>Ish grafigi</b>: 6/1, 9:45 - 23:00\n— <b>Oylik maosh</b>: 8 000 000 dan yuqori (fiks + KPI)\n— <b>Telefon</b>: (telegramdan yozing)\n\n<b>🔻</b> <b>Talablar</b>:\n— Высшее сельскохозяйственное образование (агрономия, растениеводство).\n— Опыт работы агрономом от 3 лет.\n— Опыт работы с сельскохозяйственными культурами, выращиваемыми в условиях Узбекистана.\n— Знание современных агротехнологий и методов защиты растений.\n— …и ещё 8\n\n📩 <b>Kanalga eʼlon joylash 👉</b> @Khazratov\n\n📌 @Finderuz — eng yuqori maoshlar!",
-   "title": "Агроном kerak",
-   "salary": "8 000 000 dan yuqori (fiks + KPI)"
   }
  ],
  "queue_date": "2026-11-20",
- "last_sent": "2026-11-19T16:51:06.422684+05:00",
+ "last_sent": "2026-11-20T07:32:28.730521+05:00",
  "history": [
   {
    "at": "2026-11-19T08:21:14.633200+05:00",
@@ -85,6 +71,20 @@
    "src": "kasbim_uz/11123",
    "status": "sent",
    "kind": "auto"
+  },
+  {
+   "at": "2026-11-20T07:32:28.730521+05:00",
+   "title": "Агроном kerak",
+   "src": "kasbim_uz/11130",
+   "status": "skipped",
+   "kind": "auto"
+  },
+  {
+   "at": "2026-11-20T07:32:28.730521+05:00",
+   "title": "Kontent maker kerak",
+   "src": "rizqimuz/10553",
+   "status": "sent",
+   "kind": "auto"
   }
  ],
  "manual_done": {},
@@ -93,7 +93,8 @@
   "a3ad47c2a5e365bf",
   "f89831d95da5e50c",
   "31b65c616cdd82d9",
-  "94e3c32633a40f50"
+  "94e3c32633a40f50",
+  "de21f447f9bd5560"
  ],
  "rebuild_done": "1795141854048",
  "next_queue": [],
