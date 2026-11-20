@@ -9,17 +9,10 @@
   "de21f447f9bd55603e47c6ca2c4dbed1": "2026-11-20",
   "a8927b1c21422ed606eba0d817d8b8ca": "2026-11-20",
   "1321a1dbcfcb15fc36c6ed41ce968c05": "2026-11-20",
-  "cdb6c7fb8caf7fe726f1f1e6821a9306": "2026-11-20"
+  "cdb6c7fb8caf7fe726f1f1e6821a9306": "2026-11-20",
+  "c6a44944e9e5f8918b983dd0eed10fa9": "2026-11-20"
  },
  "queue": [
-  {
-   "at": "2026-11-20T14:50:00+05:00",
-   "src": "marketingdaishla/2086",
-   "fp": "c6a44944e9e5f8918b983dd0eed10fa9",
-   "html": "<b>❗️ SMM Menejer kerak</b>\n\n— <b>Manzil</b>: Chorsu | Gulobod 3\n— <b>Oylik maosh</b>: 3 000 000 dan 12 000 000 gacha (Tajribasiga qarab)\n— <b>Telefon</b>: +998950750055\n— <b>Telegram</b>: @agency_055\n\n<b>🔻</b> <b>Talablar</b>:\n— Jamoa bilan chiqishish,\n— O’z vaqtida ishlarni bajarish\n— kreativ fikrlash+Shablon dan qochish\n— Kontent plan tuza olish\n— kontent asosida ssenariy qilib, videoni mediaga tadbiq qilish\n\n📩 <b>Kanalga eʼlon joylash 👉</b> @Khazratov\n\n📌 @Finderuz — eng yuqori maoshlar!",
-   "title": "SMM Menejer kerak",
-   "salary": "3 000 000 dan 12 000 000 gacha (Tajribasiga qarab)"
-  },
   {
    "at": "2026-11-20T16:55:00+05:00",
    "src": "rizqimuz/10544",
@@ -38,7 +31,7 @@
   }
  ],
  "queue_date": "2026-11-20",
- "last_sent": "2026-11-20T12:29:31.640442+05:00",
+ "last_sent": "2026-11-20T14:46:25.862814+05:00",
  "history": [
   {
    "at": "2026-11-19T08:21:14.633200+05:00",
@@ -109,6 +102,13 @@
    "src": "rizqimuz/10552",
    "status": "sent",
    "kind": "auto"
+  },
+  {
+   "at": "2026-11-20T14:46:25.862814+05:00",
+   "title": "SMM Menejer kerak",
+   "src": "marketingdaishla/2086",
+   "status": "sent",
+   "kind": "auto"
   }
  ],
  "manual_done": {},
@@ -120,7 +120,8 @@
   "94e3c32633a40f50",
   "de21f447f9bd5560",
   "a8927b1c21422ed6",
-  "cdb6c7fb8caf7fe7"
+  "cdb6c7fb8caf7fe7",
+  "c6a44944e9e5f891"
  ],
  "rebuild_done": "1795153081366",
  "next_queue": [],
