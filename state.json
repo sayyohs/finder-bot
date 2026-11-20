@@ -10,7 +10,8 @@
   "a8927b1c21422ed606eba0d817d8b8ca": "2026-11-20",
   "1321a1dbcfcb15fc36c6ed41ce968c05": "2026-11-20",
   "cdb6c7fb8caf7fe726f1f1e6821a9306": "2026-11-20",
-  "c6a44944e9e5f8918b983dd0eed10fa9": "2026-11-20"
+  "c6a44944e9e5f8918b983dd0eed10fa9": "2026-11-20",
+  "b565655d834eca309e72a02628416614": "2026-11-20"
  },
  "queue": [
   {
@@ -20,18 +21,10 @@
    "html": "<b>❗️ Call operator kerak</b>\n\n— <b>Korxona</b>: LOR BOR 24/7 (Professors klinikasi, LOR bo‘limi)\n— <b>Manzil</b>: Offline. Toshkent shahri\n— <b>Oylik maosh</b>: 4 000 000 dan 7 000 000 gacha (fiks + KPI)\n— <b>Telefon</b>: +998977025285\n— <b>Telegram</b>: @Loras2018\n\n<b>🔻</b> <b>Talablar</b>:\n— O‘zbek va rus tillarida erkin muloqot qila olish. Xushmuomala, mas’uliyatli va tartibli bo‘lish. Kompyuter va Telegram, Instagram kabi messenjerlarda ishlay olish. Bemorlarni telefon va ijtimoiy tarmoqlar orqali qabulga yozish. Bemorlarni kutib olish va ro‘yxatga olish. CRM tizimida ishlash va kunlik hisobot yuritish. Tibbiyot sohasidagi tajriba afzallik hisoblanadi.\n\n📩 <b>Kanalga eʼlon joylash 👉</b> @Khazratov\n\n📌 @Finderuz — eng yuqori maoshlar!",
    "title": "Call operator kerak",
    "salary": "4 000 000 dan 7 000 000 gacha (fiks + KPI)"
-  },
-  {
-   "at": "2026-11-20T19:00:00+05:00",
-   "src": "rizqimuz/10547",
-   "fp": "b565655d834eca309e72a02628416614",
-   "html": "<b>❗️ Senarist kerak</b>\n\n— <b>Korxona</b>: Qurilish kompaniya\n— <b>Manzil</b>: Offline. Samarqand shahri\n— <b>Oylik maosh</b>: 200$-400$\n— <b>Telefon</b>: 906060747\n\n<b>🔻</b> <b>Talablar</b>:\n— Qurilish kompaniyasiga zoʻr kreativ senariy tuzish kerak zur takliflar bilan ishlaydigan kerak\n\n📩 <b>Kanalga eʼlon joylash 👉</b> @Khazratov\n\n📌 @Finderuz — eng yuqori maoshlar!",
-   "title": "Senarist kerak",
-   "salary": "200$-400$"
   }
  ],
  "queue_date": "2026-11-20",
- "last_sent": "2026-11-20T14:46:25.862814+05:00",
+ "last_sent": "2026-11-20T16:17:25.361687+05:00",
  "history": [
   {
    "at": "2026-11-19T08:21:14.633200+05:00",
@@ -109,6 +102,13 @@
    "src": "marketingdaishla/2086",
    "status": "sent",
    "kind": "auto"
+  },
+  {
+   "at": "2026-11-20T16:17:25.361687+05:00",
+   "title": "Senarist kerak",
+   "src": "rizqimuz/10547",
+   "status": "sent",
+   "kind": "auto"
   }
  ],
  "manual_done": {},
@@ -121,7 +121,8 @@
   "de21f447f9bd5560",
   "a8927b1c21422ed6",
   "cdb6c7fb8caf7fe7",
-  "c6a44944e9e5f891"
+  "c6a44944e9e5f891",
+  "b565655d834eca30"
  ],
  "rebuild_done": "1795153081366",
  "next_queue": [],
