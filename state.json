@@ -8,17 +8,10 @@
   "caaf4d6aa9a151ebb50071e526680496": "2026-11-20",
   "de21f447f9bd55603e47c6ca2c4dbed1": "2026-11-20",
   "a8927b1c21422ed606eba0d817d8b8ca": "2026-11-20",
-  "1321a1dbcfcb15fc36c6ed41ce968c05": "2026-11-20"
+  "1321a1dbcfcb15fc36c6ed41ce968c05": "2026-11-20",
+  "cdb6c7fb8caf7fe726f1f1e6821a9306": "2026-11-20"
  },
  "queue": [
-  {
-   "at": "2026-11-20T12:45:00+05:00",
-   "src": "rizqimuz/10552",
-   "fp": "cdb6c7fb8caf7fe726f1f1e6821a9306",
-   "html": "<b>❗️ Video operator kerak</b>\n\n— <b>Korxona</b>: Registon maktabi\n— <b>Manzil</b>: Tinchlik filial.\n— <b>Ish grafigi</b>: 09:00 - 18:00\n— <b>Oylik maosh</b>: 7 000 000 dan 9 000 000 gacha\n— <b>Telefon</b>: +998773702700\n— <b>Telegram</b>: @RegistanHR_admin\n\n<b>🔻</b> <b>Talablar</b>:\n— Videomontaj va  suratga olish bo‘yicha amaliy tajribaga ega bo‘lishi\n— Adobe Premiere Pro, After Effects o‘xshash dasturlarni yaxshi bilishi\n— O‘z ishlaridan namunalar (portfolio) mavjud bo‘lishi\n— Berilgan vazifalarni o&#x27;z vaqtida topshirishi.\n— – Tajriba 6 oy -1 yil\n\n📩 <b>Kanalga eʼlon joylash 👉</b> @Khazratov\n\n📌 @Finderuz — eng yuqori maoshlar!",
-   "title": "Video operator kerak",
-   "salary": "7 000 000 dan 9 000 000 gacha"
-  },
   {
    "at": "2026-11-20T14:50:00+05:00",
    "src": "marketingdaishla/2086",
@@ -45,7 +38,7 @@
   }
  ],
  "queue_date": "2026-11-20",
- "last_sent": "2026-11-20T10:35:16.523074+05:00",
+ "last_sent": "2026-11-20T12:29:31.640442+05:00",
  "history": [
   {
    "at": "2026-11-19T08:21:14.633200+05:00",
@@ -109,6 +102,13 @@
    "src": "kasbim_uz/11135",
    "status": "skipped",
    "kind": "auto"
+  },
+  {
+   "at": "2026-11-20T12:29:31.640442+05:00",
+   "title": "Video operator kerak",
+   "src": "rizqimuz/10552",
+   "status": "sent",
+   "kind": "auto"
   }
  ],
  "manual_done": {},
@@ -119,7 +119,8 @@
   "31b65c616cdd82d9",
   "94e3c32633a40f50",
   "de21f447f9bd5560",
-  "a8927b1c21422ed6"
+  "a8927b1c21422ed6",
+  "cdb6c7fb8caf7fe7"
  ],
  "rebuild_done": "1795153081366",
  "next_queue": [],
