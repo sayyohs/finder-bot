@@ -6,17 +6,10 @@
   "31b65c616cdd82d9fd360c61335f09c0": "2026-11-19",
   "94e3c32633a40f509376c1469a1aaae9": "2026-11-19",
   "caaf4d6aa9a151ebb50071e526680496": "2026-11-20",
-  "de21f447f9bd55603e47c6ca2c4dbed1": "2026-11-20"
+  "de21f447f9bd55603e47c6ca2c4dbed1": "2026-11-20",
+  "a8927b1c21422ed606eba0d817d8b8ca": "2026-11-20"
  },
  "queue": [
-  {
-   "at": "2026-11-20T11:30:00+05:00",
-   "src": "rizqimuz/10549",
-   "fp": "a8927b1c21422ed606eba0d817d8b8ca",
-   "html": "<b>❗️ Montajyor kerak</b>\n\n— <b>Korxona</b>: Texno lazer\n— <b>Manzil</b>: Offline. Toshkent shahar\n— <b>Oylik maosh</b>: 5 000 000 dan 12 000 000 gacha (fiks + KPI)\n— <b>Telefon</b>: +998935874001\n— <b>Telegram</b>: @Ledmaster1\n\n<b>🔻</b> <b>Talablar</b>:\n— Professional videoga olish va montaj qilish\n\n📩 <b>Kanalga eʼlon joylash 👉</b> @Khazratov\n\n📌 @Finderuz — eng yuqori maoshlar!",
-   "title": "Montajyor kerak",
-   "salary": "5 000 000 dan 12 000 000 gacha (fiks + KPI)"
-  },
   {
    "at": "2026-11-20T14:00:00+05:00",
    "src": "kasbim_uz/11135",
@@ -35,7 +28,7 @@
   }
  ],
  "queue_date": "2026-11-20",
- "last_sent": "2026-11-20T07:32:28.730521+05:00",
+ "last_sent": "2026-11-20T10:35:16.523074+05:00",
  "history": [
   {
    "at": "2026-11-19T08:21:14.633200+05:00",
@@ -85,6 +78,13 @@
    "src": "rizqimuz/10553",
    "status": "sent",
    "kind": "auto"
+  },
+  {
+   "at": "2026-11-20T10:35:16.523074+05:00",
+   "title": "Montajyor kerak",
+   "src": "rizqimuz/10549",
+   "status": "sent",
+   "kind": "auto"
   }
  ],
  "manual_done": {},
@@ -94,7 +94,8 @@
   "f89831d95da5e50c",
   "31b65c616cdd82d9",
   "94e3c32633a40f50",
-  "de21f447f9bd5560"
+  "de21f447f9bd5560",
+  "a8927b1c21422ed6"
  ],
  "rebuild_done": "1795141854048",
  "next_queue": [],
