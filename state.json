@@ -16,20 +16,12 @@
   "1fe9fc4dad4f7274b298bfc187529f8c": "2026-11-21",
   "4cbaff34afb6f81e5e9474fccf93ef9b": "2026-11-21",
   "f2b0d49d9f59575dc37a437ea10a3612": "2026-11-21",
-  "a77b1c29d129a2145618c3c6f8af070b": "2026-11-21"
+  "a77b1c29d129a2145618c3c6f8af070b": "2026-11-21",
+  "1ed3ffa57b1a62c6b39c8797cb9d7453": "2026-11-21"
  },
- "queue": [
-  {
-   "at": "2026-11-21T19:00:00+05:00",
-   "src": "kasbim_uz/11138",
-   "fp": "1ed3ffa57b1a62c6b39c8797cb9d7453",
-   "html": "<b>❗️ Registrator kerak</b>\n\n— <b>Korxona</b>: Darmon Servis\n— <b>Manzil</b>: Toshkent shahar, Chilonzor tumani, Cho’ponota ko’chasi, 18/19\n— <b>Ish grafigi</b>: 08:00 – 17:00, 6/1\n— <b>Oylik maosh</b>: 6 000 000 dan 10 000 000 gacha\n— <b>Telefon</b>: +998951247402\n— <b>Telegram</b>: @DarmonServis_HR\n\n<b>🔻</b> <b>Talablar</b>:\n— 30–40 yoshdagi ayollar\n— Kompyuterda ishlay olish\n— Rus va o’zbek tillarida ravon gaplashish\n— Patsientlarga xushmuomila bo’lish ko’nikmasi\n— Vazifalar: -Patsientlarni iliq kutib olish\n\n📩 <b>Kanalga eʼlon joylash 👉</b> @Khazratov\n\n📌 @Finderuz — eng yuqori maoshlar!",
-   "title": "Registrator kerak",
-   "salary": "6 000 000 dan 10 000 000 gacha"
-  }
- ],
+ "queue": [],
  "queue_date": "2026-11-21",
- "last_sent": "2026-11-21T17:22:10.028855+05:00",
+ "last_sent": "2026-11-21T19:35:38.641060+05:00",
  "history": [
   {
    "at": "2026-11-19T08:21:14.633200+05:00",
@@ -147,6 +139,13 @@
    "at": "2026-11-21T17:22:10.028855+05:00",
    "title": "AI Montajor kerak",
    "src": "rizqimuz/10560",
+   "status": "sent",
+   "kind": "auto"
+  },
+  {
+   "at": "2026-11-21T19:35:38.641060+05:00",
+   "title": "Registrator kerak",
+   "src": "kasbim_uz/11138",
    "status": "sent",
    "kind": "auto"
   }
