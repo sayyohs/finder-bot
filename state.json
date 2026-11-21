@@ -12,17 +12,10 @@
   "cdb6c7fb8caf7fe726f1f1e6821a9306": "2026-11-20",
   "c6a44944e9e5f8918b983dd0eed10fa9": "2026-11-20",
   "b565655d834eca309e72a02628416614": "2026-11-20",
-  "803b39d1ba50f56411c2e0c884edc30d": "2026-11-20"
+  "803b39d1ba50f56411c2e0c884edc30d": "2026-11-20",
+  "1fe9fc4dad4f7274b298bfc187529f8c": "2026-11-21"
  },
  "queue": [
-  {
-   "at": "2026-11-21T09:00:00+05:00",
-   "src": "rizqimuz/10564",
-   "fp": "1fe9fc4dad4f7274b298bfc187529f8c",
-   "html": "<b>❗️ Kontent maker kerak</b>\n\n— <b>Korxona</b>: Marketing Agentlik\n— <b>Manzil</b>: Toshkent shahri, Chilonzor tumani\n— <b>Oylik maosh</b>: 10 000 000 dan 20 000 000 gacha\n— <b>Telefon</b>: (telegramdan yozing)\n— <b>Telegram</b>: @kornetto_20022\n\n<b>🔻</b> <b>Talablar</b>:\n— In house ishlay olish, ijtimoiy tarmoqlar uchun kontent g’oyalari va ssenariylar tayyorlay olish. Video syomka ko’nikmalariga ega bo’lish nomzod uchun qo’shimcha afzallik beradi\n\n📩 <b>Kanalga eʼlon joylash 👉</b> @Khazratov\n\n📌 @Finderuz — eng yuqori maoshlar!",
-   "title": "Kontent maker kerak",
-   "salary": "10 000 000 dan 20 000 000 gacha"
-  },
   {
    "at": "2026-11-21T11:30:00+05:00",
    "src": "rizqimuz/10563",
@@ -57,7 +50,7 @@
   }
  ],
  "queue_date": "2026-11-21",
- "last_sent": "2026-11-20T18:37:38.702506+05:00",
+ "last_sent": "2026-11-21T09:13:10.408097+05:00",
  "history": [
   {
    "at": "2026-11-19T08:21:14.633200+05:00",
@@ -149,6 +142,13 @@
    "src": "rizqimuz/10544",
    "status": "sent",
    "kind": "auto"
+  },
+  {
+   "at": "2026-11-21T09:13:10.408097+05:00",
+   "title": "Kontent maker kerak",
+   "src": "rizqimuz/10564",
+   "status": "sent",
+   "kind": "auto"
   }
  ],
  "manual_done": {},
@@ -162,7 +162,8 @@
   "a8927b1c21422ed6",
   "cdb6c7fb8caf7fe7",
   "c6a44944e9e5f891",
-  "b565655d834eca30"
+  "b565655d834eca30",
+  "1fe9fc4dad4f7274"
  ],
  "rebuild_done": "1795227957714",
  "next_queue": [],
