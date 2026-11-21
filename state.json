@@ -15,17 +15,10 @@
   "803b39d1ba50f56411c2e0c884edc30d": "2026-11-20",
   "1fe9fc4dad4f7274b298bfc187529f8c": "2026-11-21",
   "4cbaff34afb6f81e5e9474fccf93ef9b": "2026-11-21",
-  "f2b0d49d9f59575dc37a437ea10a3612": "2026-11-21"
+  "f2b0d49d9f59575dc37a437ea10a3612": "2026-11-21",
+  "a77b1c29d129a2145618c3c6f8af070b": "2026-11-21"
  },
  "queue": [
-  {
-   "at": "2026-11-21T16:30:00+05:00",
-   "src": "rizqimuz/10560",
-   "fp": "a77b1c29d129a2145618c3c6f8af070b",
-   "html": "<b>❗️ AI Montajor kerak</b>\n\n— <b>Korxona</b>: Lama nashriyoti\n— <b>Manzil</b>: Offline. Toshkent shahri\n— <b>Oylik maosh</b>: 8 000 000 dan 10 000 000 gacha (tajribaga qarab kelishiladi)\n— <b>Telefon</b>: +998940252512\n— <b>Telegram</b>: @perfectojon\n\n<b>🔻</b> <b>Talablar</b>:\n— AI orqali kontentlarni yasay olish\n— Kamida 1 yil tajribasi bo’lishi\n— Kontent sifati bo’yicha doimiy ishlash\n— Mas’uliyatli va intizomli bo‘lishi\n\n📩 <b>Kanalga eʼlon joylash 👉</b> @Khazratov\n\n📌 @Finderuz — eng yuqori maoshlar!",
-   "title": "AI Montajor kerak",
-   "salary": "8 000 000 dan 10 000 000 gacha (tajribaga qarab kelishiladi)"
-  },
   {
    "at": "2026-11-21T19:00:00+05:00",
    "src": "kasbim_uz/11138",
@@ -36,7 +29,7 @@
   }
  ],
  "queue_date": "2026-11-21",
- "last_sent": "2026-11-21T14:50:26.968134+05:00",
+ "last_sent": "2026-11-21T17:22:10.028855+05:00",
  "history": [
   {
    "at": "2026-11-19T08:21:14.633200+05:00",
@@ -147,6 +140,13 @@
    "at": "2026-11-21T14:50:26.968134+05:00",
    "title": "Marketolog kerak",
    "src": "rizqimuz/10556",
+   "status": "sent",
+   "kind": "auto"
+  },
+  {
+   "at": "2026-11-21T17:22:10.028855+05:00",
+   "title": "AI Montajor kerak",
+   "src": "rizqimuz/10560",
    "status": "sent",
    "kind": "auto"
   }
