@@ -14,17 +14,10 @@
   "b565655d834eca309e72a02628416614": "2026-11-20",
   "803b39d1ba50f56411c2e0c884edc30d": "2026-11-20",
   "1fe9fc4dad4f7274b298bfc187529f8c": "2026-11-21",
-  "4cbaff34afb6f81e5e9474fccf93ef9b": "2026-11-21"
+  "4cbaff34afb6f81e5e9474fccf93ef9b": "2026-11-21",
+  "f2b0d49d9f59575dc37a437ea10a3612": "2026-11-21"
  },
  "queue": [
-  {
-   "at": "2026-11-21T14:00:00+05:00",
-   "src": "rizqimuz/10556",
-   "fp": "f2b0d49d9f59575dc37a437ea10a3612",
-   "html": "<b>❗️ Marketolog kerak</b>\n\n— <b>Korxona</b>: InSchool (Samarqanddagi bolalar kiyim do’koni, premium sifat)\n— <b>Manzil</b>: Offline. Samarqand shahri\n— <b>Oylik maosh</b>: 12 000 000 dan yuqori (natijaga bog’liq)\n— <b>Telefon</b>: (telegramdan yozing)\n\n<b>🔻</b> <b>Talablar</b>:\n— Natijaga javob bera oladigan marketolog bo’lishi, SMM’ni yaxshi tushunishi, do’konga odam olib keladigan video g’oyalarini yarata olishi shart. Portfolioda natija bergan ishlar bo’lishi kerak (trend emas, mijoz olib kelgan kontent)\n\n📩 <b>Kanalga eʼlon joylash 👉</b> @Khazratov\n\n📌 @Finderuz — eng yuqori maoshlar!",
-   "title": "Marketolog kerak",
-   "salary": "12 000 000 dan yuqori (natijaga bog’liq)"
-  },
   {
    "at": "2026-11-21T16:30:00+05:00",
    "src": "rizqimuz/10560",
@@ -43,7 +36,7 @@
   }
  ],
  "queue_date": "2026-11-21",
- "last_sent": "2026-11-21T11:45:36.969040+05:00",
+ "last_sent": "2026-11-21T14:50:26.968134+05:00",
  "history": [
   {
    "at": "2026-11-19T08:21:14.633200+05:00",
@@ -147,6 +140,13 @@
    "at": "2026-11-21T11:45:36.969040+05:00",
    "title": "Targetolog kerak",
    "src": "rizqimuz/10563",
+   "status": "sent",
+   "kind": "auto"
+  },
+  {
+   "at": "2026-11-21T14:50:26.968134+05:00",
+   "title": "Marketolog kerak",
+   "src": "rizqimuz/10556",
    "status": "sent",
    "kind": "auto"
   }
