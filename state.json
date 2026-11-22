@@ -17,17 +17,10 @@
   "4cbaff34afb6f81e5e9474fccf93ef9b": "2026-11-21",
   "f2b0d49d9f59575dc37a437ea10a3612": "2026-11-21",
   "a77b1c29d129a2145618c3c6f8af070b": "2026-11-21",
-  "1ed3ffa57b1a62c6b39c8797cb9d7453": "2026-11-21"
+  "1ed3ffa57b1a62c6b39c8797cb9d7453": "2026-11-21",
+  "baf7a0456dc322ecd588ed94fd7be5c7": "2026-11-22"
  },
  "queue": [
-  {
-   "at": "2026-11-22T09:00:00+05:00",
-   "src": "rizqimuz/10566",
-   "fp": "baf7a0456dc322ecd588ed94fd7be5c7",
-   "html": "<b>❗️ ROP kerak</b>\n\n— <b>Korxona</b>: Imperator Biznes\n— <b>Manzil</b>: Toshkent shahri , Chilonzor tumani\n— <b>Ish grafigi</b>: 6/1 , 10:00-19:00 gacha\n— <b>Oylik maosh</b>: 10 000 000 dan 20 000 000 gacha\n— <b>Telefon</b>: (telegramdan yozing)\n— <b>Telegram</b>: @kornetto_20022\n\n<b>🔻</b> <b>Talablar</b>:\n— Malakali sotuvchi va CRM tizimini tushinishi\n— Sotuv skriptlarini tuzish va menejerlarga o’rgatishi\n— Liderlik va boshqaruvchanlik qobiliyati bo’lishi kerak\n— Bir loyihani A nuqtadan - B nuqtaga aniq olib chiqqan bo’lishi kerak\n— Aniq miro yokida boshqa platformalarda strategiyasi yoq , faqatgina hayolini kelganlar yozgan murojaat qilmasin\n\n📩 <b>Kanalga eʼlon joylash 👉</b> @Khazratov\n\n📌 @Finderuz — eng yuqori maoshlar!",
-   "title": "ROP kerak",
-   "salary": "10 000 000 dan 20 000 000 gacha"
-  },
   {
    "at": "2026-11-22T12:20:00+05:00",
    "src": "rizqimuz/10567",
@@ -54,7 +47,7 @@
   }
  ],
  "queue_date": "2026-11-22",
- "last_sent": "2026-11-21T19:35:38.641060+05:00",
+ "last_sent": "2026-11-22T09:17:49.528384+05:00",
  "history": [
   {
    "at": "2026-11-19T08:21:14.633200+05:00",
@@ -179,6 +172,13 @@
    "at": "2026-11-21T19:35:38.641060+05:00",
    "title": "Registrator kerak",
    "src": "kasbim_uz/11138",
+   "status": "sent",
+   "kind": "auto"
+  },
+  {
+   "at": "2026-11-22T09:17:49.528384+05:00",
+   "title": "ROP kerak",
+   "src": "rizqimuz/10566",
    "status": "sent",
    "kind": "auto"
   }
