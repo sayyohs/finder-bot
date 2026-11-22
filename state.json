@@ -20,20 +20,12 @@
   "1ed3ffa57b1a62c6b39c8797cb9d7453": "2026-11-21",
   "baf7a0456dc322ecd588ed94fd7be5c7": "2026-11-22",
   "b2d877484740eb97947b771db3cdc442": "2026-11-22",
-  "d7b19fb0ff5e4f26ac89d7f1d5a71583": "2026-11-22"
+  "d7b19fb0ff5e4f26ac89d7f1d5a71583": "2026-11-22",
+  "8f6be21f1b959c84ffb3a03a7e315ca4": "2026-11-22"
  },
- "queue": [
-  {
-   "at": "2026-11-22T19:00:00+05:00",
-   "src": "rizqimuz/10568",
-   "fp": "8f6be21f1b959c84ffb3a03a7e315ca4",
-   "html": "<b>❗️ Call operator qiz kerak</b>\n\n— <b>Korxona</b>: Registon Shahriston filiali.\n— <b>Manzil</b>: Yunusobod, Shahriston metro yonida.\n— <b>Oylik maosh</b>: 3 000 000 dan 6 000 000 gacha\n— <b>Telefon</b>: 999457080\n— <b>Telegram</b>: @miraziz_nodirovich\n\n<b>🔻</b> <b>Talablar</b>:\n— Call-operatorlik bo&#x27;yicha tajriba. CRM&#x27;da ishlashni bilishi kerak. O&#x27;quv markaz sohasida ishlagan bo&#x27;lsa avzal ko&#x27;riladi!\n\n📩 <b>Kanalga eʼlon joylash 👉</b> @Khazratov\n\n📌 @Finderuz — eng yuqori maoshlar!",
-   "title": "Call operator qiz kerak",
-   "salary": "3 000 000 dan 6 000 000 gacha"
-  }
- ],
+ "queue": [],
  "queue_date": "2026-11-22",
- "last_sent": "2026-11-22T16:18:27.604108+05:00",
+ "last_sent": "2026-11-22T19:51:18.375410+05:00",
  "history": [
   {
    "at": "2026-11-19T08:21:14.633200+05:00",
@@ -179,6 +171,13 @@
    "at": "2026-11-22T16:18:27.604108+05:00",
    "title": "ROP kerak",
    "src": "rizqimuz/10565",
+   "status": "sent",
+   "kind": "auto"
+  },
+  {
+   "at": "2026-11-22T19:51:18.375410+05:00",
+   "title": "Call operator qiz kerak",
+   "src": "rizqimuz/10568",
    "status": "sent",
    "kind": "auto"
   }
