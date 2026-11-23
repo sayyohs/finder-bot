@@ -21,20 +21,12 @@
   "baf7a0456dc322ecd588ed94fd7be5c7": "2026-11-22",
   "b2d877484740eb97947b771db3cdc442": "2026-11-22",
   "d7b19fb0ff5e4f26ac89d7f1d5a71583": "2026-11-22",
-  "8f6be21f1b959c84ffb3a03a7e315ca4": "2026-11-22"
+  "8f6be21f1b959c84ffb3a03a7e315ca4": "2026-11-22",
+  "9a56e86c42ac9c750bc14a9a368ea8cc": "2026-11-23"
  },
- "queue": [
-  {
-   "at": "2026-11-23T09:00:00+05:00",
-   "src": "rizqimuz/10574",
-   "fp": "9a56e86c42ac9c750bc14a9a368ea8cc",
-   "html": "<b>❗️ Call operator kerak</b>\n\n— <b>Korxona</b>: Onix\n— <b>Manzil</b>: Offline. Toshkent shahri\n— <b>Oylik maosh</b>: 4 000 000 dan yuqori (fiks + KPI)\n— <b>Telefon</b>: +998770702857\n— <b>Telegram</b>: @yunusovvnas\n\n<b>🔻</b> <b>Talablar</b>:\n— O‘g‘il bola, xushmuomala, kirishimli bo‘lish\n\n📩 <b>Kanalga eʼlon joylash 👉</b> @Khazratov\n\n📌 @Finderuz — eng yuqori maoshlar!",
-   "title": "Call operator kerak",
-   "salary": "4 000 000 dan yuqori (fiks + KPI)"
-  }
- ],
+ "queue": [],
  "queue_date": "2026-11-23",
- "last_sent": "2026-11-22T19:51:18.375410+05:00",
+ "last_sent": "2026-11-23T09:06:53.706076+05:00",
  "history": [
   {
    "at": "2026-11-19T08:21:14.633200+05:00",
@@ -187,6 +179,13 @@
    "at": "2026-11-22T19:51:18.375410+05:00",
    "title": "Call operator qiz kerak",
    "src": "rizqimuz/10568",
+   "status": "sent",
+   "kind": "auto"
+  },
+  {
+   "at": "2026-11-23T09:06:53.706076+05:00",
+   "title": "Call operator kerak",
+   "src": "rizqimuz/10574",
    "status": "sent",
    "kind": "auto"
   }
