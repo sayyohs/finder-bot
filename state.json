@@ -23,17 +23,10 @@
   "d7b19fb0ff5e4f26ac89d7f1d5a71583": "2026-11-22",
   "8f6be21f1b959c84ffb3a03a7e315ca4": "2026-11-22",
   "9a56e86c42ac9c750bc14a9a368ea8cc": "2026-11-23",
-  "e9341d96cae9197ed8ecb4f3dba96c07": "2026-11-24"
+  "e9341d96cae9197ed8ecb4f3dba96c07": "2026-11-24",
+  "9169f145a65df86e67d29d81de41d8f4": "2026-11-24"
  },
  "queue": [
-  {
-   "at": "2026-11-24T11:30:00+05:00",
-   "src": "rizqimuz/10583",
-   "fp": "9169f145a65df86e67d29d81de41d8f4",
-   "html": "<b>❗️ Video montajyor kerak</b>\n\n— <b>Korxona</b>: Masar Media Agentligi\n— <b>Manzil</b>: Offline. Toshkent shahri\n— <b>Oylik maosh</b>: 5 000 000 dan 12 000 000 gacha\n— <b>Telefon</b>: +998997077789\n— <b>Telegram</b>: @Figmaster001\n\n<b>🔻</b> <b>Talablar</b>:\n— O’zini kompyuteri bo’lishi shart. kamida 1 yillik video montaj tajribasi, (After effects, Adobe Premier Pro) larni bilish\n\n📩 <b>Kanalga eʼlon joylash 👉</b> @Khazratov\n\n📌 @Finderuz — eng yuqori maoshlar!",
-   "title": "Video montajyor kerak",
-   "salary": "5 000 000 dan 12 000 000 gacha"
-  },
   {
    "at": "2026-11-24T14:00:00+05:00",
    "src": "marketing_vakansiya/643",
@@ -60,7 +53,7 @@
   }
  ],
  "queue_date": "2026-11-24",
- "last_sent": "2026-11-24T09:28:40.998688+05:00",
+ "last_sent": "2026-11-24T12:40:25.090410+05:00",
  "history": [
   {
    "at": "2026-11-19T08:21:14.633200+05:00",
@@ -229,6 +222,13 @@
    "src": "rizqimuz/10579",
    "status": "sent",
    "kind": "auto"
+  },
+  {
+   "at": "2026-11-24T12:40:25.090410+05:00",
+   "title": "Video montajyor kerak",
+   "src": "rizqimuz/10583",
+   "status": "sent",
+   "kind": "auto"
   }
  ],
  "manual_done": {},
@@ -245,7 +245,8 @@
   "b565655d834eca30",
   "1fe9fc4dad4f7274",
   "d7b19fb0ff5e4f26",
-  "e9341d96cae9197e"
+  "e9341d96cae9197e",
+  "9169f145a65df86e"
  ],
  "rebuild_done": "1795412086577",
  "next_queue": [],
