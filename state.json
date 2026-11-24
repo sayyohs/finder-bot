@@ -26,20 +26,12 @@
   "e9341d96cae9197ed8ecb4f3dba96c07": "2026-11-24",
   "9169f145a65df86e67d29d81de41d8f4": "2026-11-24",
   "f6fa2fed2760eb2eb32c06afb19611bb": "2026-11-24",
-  "9a8ae9e53dc0400b3d11aeee14e4bc36": "2026-11-24"
+  "9a8ae9e53dc0400b3d11aeee14e4bc36": "2026-11-24",
+  "42e8a5a82c3265172f037f0dfbc1865b": "2026-11-24"
  },
- "queue": [
-  {
-   "at": "2026-11-24T19:00:00+05:00",
-   "src": "rizqimuz/10582",
-   "fp": "42e8a5a82c3265172f037f0dfbc1865b",
-   "html": "<b>❗️ Mobilograf kerak</b>\n\n— <b>Korxona</b>: Zumar nashriyoti\n— <b>Manzil</b>: Offline. Toshkent shahri\n— <b>Ish grafigi</b>: 10:00 dan 17:00 gacha\n— <b>Oylik maosh</b>: 4 000 000 (natijaga qarab oshiriladi)\n— <b>Telefon</b>: (telegramdan yozing)\n— <b>Telegram</b>: @Ruxshona_1703\n\n<b>🔻</b> <b>Talablar</b>:\n— Mobilografiya bo‘yicha tajriba, sifatli video va foto suratga olish, CapCut yoki boshqa montaj dasturlarida ishlash, kadr va kompozitsiyani his qilish.\n\n📩 <b>Kanalga eʼlon joylash 👉</b> @Khazratov\n\n📌 @Finderuz — eng yuqori maoshlar!",
-   "title": "Mobilograf kerak",
-   "salary": "4 000 000 (natijaga qarab oshiriladi)"
-  }
- ],
+ "queue": [],
  "queue_date": "2026-11-24",
- "last_sent": "2026-11-24T16:59:40.160797+05:00",
+ "last_sent": "2026-11-24T19:32:33.922810+05:00",
  "history": [
   {
    "at": "2026-11-19T08:21:14.633200+05:00",
@@ -227,6 +219,13 @@
    "at": "2026-11-24T16:59:40.160797+05:00",
    "title": "Call operator kerak",
    "src": "rizqimuz/10577",
+   "status": "sent",
+   "kind": "auto"
+  },
+  {
+   "at": "2026-11-24T19:32:33.922810+05:00",
+   "title": "Mobilograf kerak",
+   "src": "rizqimuz/10582",
    "status": "sent",
    "kind": "auto"
   }
