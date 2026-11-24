@@ -24,17 +24,10 @@
   "8f6be21f1b959c84ffb3a03a7e315ca4": "2026-11-22",
   "9a56e86c42ac9c750bc14a9a368ea8cc": "2026-11-23",
   "e9341d96cae9197ed8ecb4f3dba96c07": "2026-11-24",
-  "9169f145a65df86e67d29d81de41d8f4": "2026-11-24"
+  "9169f145a65df86e67d29d81de41d8f4": "2026-11-24",
+  "f6fa2fed2760eb2eb32c06afb19611bb": "2026-11-24"
  },
  "queue": [
-  {
-   "at": "2026-11-24T14:00:00+05:00",
-   "src": "marketing_vakansiya/643",
-   "fp": "f6fa2fed2760eb2eb32c06afb19611bb",
-   "html": "<b>❗️ 🎥 VIDEOGRAF KERAK</b>\n\n— <b>Manzil</b>: Namangan shahri\n— <b>Oylik maosh</b>: 7 000 000 dan 8 000 000 gacha\n— <b>Telefon</b>: (telegramdan yozing)\n\n<b>🔻</b> <b>Talablar</b>:\n— Video suratga olish va montaj qilishni bilish\n— Kreativ fikrlash va zamonaviy kontent yaratish\n— Jamoa bilan ishlash\n— Mas’uliyatli va intizomli bo‘lish\n— 📷 Kamera va barcha kerakli jihozlar maktab tomonidan taqdim etiladi\n\n📩 <b>Kanalga eʼlon joylash 👉</b> @Khazratov\n\n📌 @Finderuz — eng yuqori maoshlar!",
-   "title": "🎥 VIDEOGRAF KERAK",
-   "salary": "7 000 000 dan 8 000 000 gacha"
-  },
   {
    "at": "2026-11-24T16:30:00+05:00",
    "src": "rizqimuz/10577",
@@ -228,6 +221,13 @@
    "title": "Video montajyor kerak",
    "src": "rizqimuz/10583",
    "status": "sent",
+   "kind": "auto"
+  },
+  {
+   "at": "2026-11-24T14:53:26.285060+05:00",
+   "title": "🎥 VIDEOGRAF KERAK",
+   "src": "marketing_vakansiya/643",
+   "status": "skipped",
    "kind": "auto"
   }
  ],
