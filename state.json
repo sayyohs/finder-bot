@@ -28,17 +28,10 @@
   "f6fa2fed2760eb2eb32c06afb19611bb": "2026-11-24",
   "9a8ae9e53dc0400b3d11aeee14e4bc36": "2026-11-24",
   "42e8a5a82c3265172f037f0dfbc1865b": "2026-11-24",
-  "199fdc7dbb364c63a1a388eea04c779b": "2026-11-25"
+  "199fdc7dbb364c63a1a388eea04c779b": "2026-11-25",
+  "0cd05c8b986c83faa65af6cfb138ae46": "2026-11-25"
  },
  "queue": [
-  {
-   "at": "2026-11-25T11:30:00+05:00",
-   "src": "rizqimuz/10587",
-   "fp": "0cd05c8b986c83faa65af6cfb138ae46",
-   "html": "<b>❗️ Call operator kerak</b>\n\n— <b>Korxona</b>: Safo Marva - Umra Operatori\n— <b>Manzil</b>: Offline. Toshkent shahri\n— <b>Ish grafigi</b>: 9 soatlik smena, to‘liq ish kuni, ofisda ishlash\n— <b>Oylik maosh</b>: 3 000 000 dan 9 000 000 gacha\n— <b>Telefon</b>: (telegramdan yozing)\n— <b>Telegram</b>: @Muzaffar_7557\n\n<b>🔻</b> <b>Talablar</b>:\n— O‘zbek tilida ravon muloqot qila olish\n— Mijozlar bilan xushmuomala bo‘lish\n— Mas’uliyatli va kirishimli bo‘lish\n— Ish tajribasi talab qilinmaydi, yangi boshlovchilar ham qabul qilinadi.\n\n📩 <b>Kanalga eʼlon joylash 👉</b> @Khazratov\n\n📌 @Finderuz — eng yuqori maoshlar!",
-   "title": "Call operator kerak",
-   "salary": "3 000 000 dan 9 000 000 gacha"
-  },
   {
    "at": "2026-11-25T14:00:00+05:00",
    "src": "click_jobs/1839",
@@ -65,7 +58,7 @@
   }
  ],
  "queue_date": "2026-11-25",
- "last_sent": "2026-11-25T09:05:50.121807+05:00",
+ "last_sent": "2026-11-25T12:51:14.629870+05:00",
  "history": [
   {
    "at": "2026-11-19T08:21:14.633200+05:00",
@@ -269,6 +262,13 @@
    "src": "click_jobs/1836",
    "status": "sent",
    "kind": "auto"
+  },
+  {
+   "at": "2026-11-25T12:51:14.629870+05:00",
+   "title": "Call operator kerak",
+   "src": "rizqimuz/10587",
+   "status": "sent",
+   "kind": "auto"
   }
  ],
  "manual_done": {},
@@ -286,7 +286,8 @@
   "1fe9fc4dad4f7274",
   "d7b19fb0ff5e4f26",
   "e9341d96cae9197e",
-  "9169f145a65df86e"
+  "9169f145a65df86e",
+  "0cd05c8b986c83fa"
  ],
  "rebuild_done": "1795543266679",
  "next_queue": [],
