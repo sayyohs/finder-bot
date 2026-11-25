@@ -29,17 +29,10 @@
   "9a8ae9e53dc0400b3d11aeee14e4bc36": "2026-11-24",
   "42e8a5a82c3265172f037f0dfbc1865b": "2026-11-24",
   "199fdc7dbb364c63a1a388eea04c779b": "2026-11-25",
-  "0cd05c8b986c83faa65af6cfb138ae46": "2026-11-25"
+  "0cd05c8b986c83faa65af6cfb138ae46": "2026-11-25",
+  "f16a6de568cf2ade9c7b4987be2d17c2": "2026-11-25"
  },
  "queue": [
-  {
-   "at": "2026-11-25T14:00:00+05:00",
-   "src": "click_jobs/1839",
-   "fp": "f16a6de568cf2ade9c7b4987be2d17c2",
-   "html": "<b>❗️ Grafik dizayner kerak</b>\n\n— <b>Korxona</b>: ASKO\n— <b>Manzil</b>: Toshkent shahri, yangi hayot (index)\n— <b>Oylik maosh</b>: 6 000 000\n— <b>Telefon</b>: (telegramdan yozing)\n— <b>Telegram</b>: @askohr\n\n<b>🔻</b> <b>Talablar</b>:\n— Adobe Photoshop, Adobe Illustrator, CorelDRAW&#x27;da ishlay olish;\n— 1 yil+ ish tajribasi.\n\n📩 <b>Kanalga eʼlon joylash 👉</b> @Khazratov\n\n📌 @Finderuz — eng yuqori maoshlar!",
-   "title": "Grafik dizayner kerak",
-   "salary": "6 000 000"
-  },
   {
    "at": "2026-11-25T16:30:00+05:00",
    "src": "click_jobs/1838",
@@ -58,7 +51,7 @@
   }
  ],
  "queue_date": "2026-11-25",
- "last_sent": "2026-11-25T12:51:14.629870+05:00",
+ "last_sent": "2026-11-25T15:14:36.834535+05:00",
  "history": [
   {
    "at": "2026-11-19T08:21:14.633200+05:00",
@@ -267,6 +260,13 @@
    "at": "2026-11-25T12:51:14.629870+05:00",
    "title": "Call operator kerak",
    "src": "rizqimuz/10587",
+   "status": "sent",
+   "kind": "auto"
+  },
+  {
+   "at": "2026-11-25T15:14:36.834535+05:00",
+   "title": "Grafik dizayner kerak",
+   "src": "click_jobs/1839",
    "status": "sent",
    "kind": "auto"
   }
