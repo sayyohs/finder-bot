@@ -30,17 +30,10 @@
   "42e8a5a82c3265172f037f0dfbc1865b": "2026-11-24",
   "199fdc7dbb364c63a1a388eea04c779b": "2026-11-25",
   "0cd05c8b986c83faa65af6cfb138ae46": "2026-11-25",
-  "f16a6de568cf2ade9c7b4987be2d17c2": "2026-11-25"
+  "f16a6de568cf2ade9c7b4987be2d17c2": "2026-11-25",
+  "fb60e5af37049a7c665dacedd05650ee": "2026-11-25"
  },
  "queue": [
-  {
-   "at": "2026-11-25T16:30:00+05:00",
-   "src": "click_jobs/1838",
-   "fp": "fb60e5af37049a7c665dacedd05650ee",
-   "html": "<b>❗️ Community Menejer kerak</b>\n\n— <b>Korxona</b>: ASKO\n— <b>Manzil</b>: Toshkent shahri, Yangi hayot\n— <b>Oylik maosh</b>: 3 500 000\n— <b>Telefon</b>: (telegramdan yozing)\n— <b>Telegram</b>: @askohr\n\n<b>🔻</b> <b>Talablar</b>:\n— O&#x27;zbek va rus tillarida savodli yoza olish;\n— Tez javob berish va muloqotga ochiqlik ;\n— Ijtimoiy tarmoqlarni &quot;ichidan&quot; bilish.\n\n📩 <b>Kanalga eʼlon joylash 👉</b> @Khazratov\n\n📌 @Finderuz — eng yuqori maoshlar!",
-   "title": "Community Menejer kerak",
-   "salary": "3 500 000"
-  },
   {
    "at": "2026-11-25T19:00:00+05:00",
    "src": "kasbim_uz/11150",
@@ -51,7 +44,7 @@
   }
  ],
  "queue_date": "2026-11-25",
- "last_sent": "2026-11-25T15:14:36.834535+05:00",
+ "last_sent": "2026-11-25T17:26:13.400380+05:00",
  "history": [
   {
    "at": "2026-11-19T08:21:14.633200+05:00",
@@ -267,6 +260,13 @@
    "at": "2026-11-25T15:14:36.834535+05:00",
    "title": "Grafik dizayner kerak",
    "src": "click_jobs/1839",
+   "status": "sent",
+   "kind": "auto"
+  },
+  {
+   "at": "2026-11-25T17:26:13.400380+05:00",
+   "title": "Community Menejer kerak",
+   "src": "click_jobs/1838",
    "status": "sent",
    "kind": "auto"
   }
