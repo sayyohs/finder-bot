@@ -27,17 +27,10 @@
   "9169f145a65df86e67d29d81de41d8f4": "2026-11-24",
   "f6fa2fed2760eb2eb32c06afb19611bb": "2026-11-24",
   "9a8ae9e53dc0400b3d11aeee14e4bc36": "2026-11-24",
-  "42e8a5a82c3265172f037f0dfbc1865b": "2026-11-24"
+  "42e8a5a82c3265172f037f0dfbc1865b": "2026-11-24",
+  "199fdc7dbb364c63a1a388eea04c779b": "2026-11-25"
  },
  "queue": [
-  {
-   "at": "2026-11-25T09:00:00+05:00",
-   "src": "click_jobs/1836",
-   "fp": "199fdc7dbb364c63a1a388eea04c779b",
-   "html": "<b>❗️ PM SMM Menejer kerak</b>\n\n— <b>Korxona</b>: Adab Nashr\n— <b>Manzil</b>: Toshkent shahri 3\n— <b>Oylik maosh</b>: 8 000 000 dan 12 000 000 gacha\n— <b>Telefon</b>: +998773710011\n— <b>Telegram</b>: @techjobsrecruiter\n\n<b>🔻</b> <b>Talablar</b>:\n— SMM sohasida kamida 2 yillik Project Manager sifatida ish tajribasi;\n— Jamoani boshqarish va vazifalarni to‘g‘ri taqsimlay olish;\n— Mijozlar bilan samarali kommunikatsiya o‘rnatish;\n— Rejalashtirish deadline va ustuvorliklar bilan ishlash qobiliyati;\n— Muammolarga yechim topish va tezkor qaror qabul qilish;\n\n📩 <b>Kanalga eʼlon joylash 👉</b> @Khazratov\n\n📌 @Finderuz — eng yuqori maoshlar!",
-   "title": "PM SMM Menejer kerak",
-   "salary": "8 000 000 dan 12 000 000 gacha"
-  },
   {
    "at": "2026-11-25T11:30:00+05:00",
    "src": "rizqimuz/10587",
@@ -72,7 +65,7 @@
   }
  ],
  "queue_date": "2026-11-25",
- "last_sent": "2026-11-24T19:32:33.922810+05:00",
+ "last_sent": "2026-11-25T09:05:50.121807+05:00",
  "history": [
   {
    "at": "2026-11-19T08:21:14.633200+05:00",
@@ -267,6 +260,13 @@
    "at": "2026-11-24T19:32:33.922810+05:00",
    "title": "Mobilograf kerak",
    "src": "rizqimuz/10582",
+   "status": "sent",
+   "kind": "auto"
+  },
+  {
+   "at": "2026-11-25T09:05:50.121807+05:00",
+   "title": "PM SMM Menejer kerak",
+   "src": "click_jobs/1836",
    "status": "sent",
    "kind": "auto"
   }
