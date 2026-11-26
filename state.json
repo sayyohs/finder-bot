@@ -36,20 +36,12 @@
   "da3c2cc5f095952fbf8924c99ec0be01": "2026-11-26",
   "d540189a0a5732a794bbdfaf1caae5f6": "2026-11-26",
   "3a8e8bf2afa6189f80d2115ee642bfef": "2026-11-26",
-  "7ff401b9be8ca2be5dbe1bf5b47db2b1": "2026-11-26"
+  "7ff401b9be8ca2be5dbe1bf5b47db2b1": "2026-11-26",
+  "86d8a0bcdec36e035f28460544773e5f": "2026-11-26"
  },
- "queue": [
-  {
-   "at": "2026-11-26T19:00:00+05:00",
-   "src": "rizqimuz/10593",
-   "fp": "86d8a0bcdec36e035f28460544773e5f",
-   "html": "<b>❗️ IT ustozi kerak</b>\n\n— <b>Korxona</b>: Mudarris maktabi\n— <b>Manzil</b>: Sergeli filiali\n— <b>Ish grafigi</b>: :9:00-18:00(Seshanba, Payshanba, Juma)\n— <b>Oylik maosh</b>: 6 000 000 dan 8 000 000 gacha\n— <b>Telefon</b>: (telegramdan yozing)\n— <b>Telegram</b>: @Mudarris_Azizbek\n\n<b>🔻</b> <b>Talablar</b>:\n— Oliy ma’lumotli bo’lishi\n— Uztozlikda kamida 3 yillik ish tajribasiga ega bo’lishi\n— Rus sinflarida ham dars o’ta olishi (rus tilini bilishi)\n— Pedagogik va psixologik yondashuvga ega bo’lishi.\n— Yosh: 20-30 yosh\n\n📩 <b>Kanalga eʼlon joylash 👉</b> @Khazratov\n\n📌 @Finderuz — eng yuqori maoshlar!",
-   "title": "IT ustozi kerak",
-   "salary": "6 000 000 dan 8 000 000 gacha"
-  }
- ],
+ "queue": [],
  "queue_date": "2026-11-26",
- "last_sent": "2026-11-26T17:02:39.202036+05:00",
+ "last_sent": "2026-11-26T19:41:43.963084+05:00",
  "history": [
   {
    "at": "2026-11-19T08:21:14.633200+05:00",
@@ -307,6 +299,13 @@
    "at": "2026-11-26T17:02:39.202036+05:00",
    "title": "SMM Menejer kerak",
    "src": "marketingdaishla/2094",
+   "status": "sent",
+   "kind": "auto"
+  },
+  {
+   "at": "2026-11-26T19:41:43.963084+05:00",
+   "title": "IT ustozi kerak",
+   "src": "rizqimuz/10593",
    "status": "sent",
    "kind": "auto"
   }
