@@ -34,17 +34,10 @@
   "fb60e5af37049a7c665dacedd05650ee": "2026-11-25",
   "d0b7edac13313f3be84806ec8cff825b": "2026-11-25",
   "da3c2cc5f095952fbf8924c99ec0be01": "2026-11-26",
-  "d540189a0a5732a794bbdfaf1caae5f6": "2026-11-26"
+  "d540189a0a5732a794bbdfaf1caae5f6": "2026-11-26",
+  "3a8e8bf2afa6189f80d2115ee642bfef": "2026-11-26"
  },
  "queue": [
-  {
-   "at": "2026-11-26T14:00:00+05:00",
-   "src": "click_jobs/1842",
-   "fp": "3a8e8bf2afa6189f80d2115ee642bfef",
-   "html": "<b>❗️ Supervayzerlar kerak! (Yigitlar)</b>\n\n— <b>Korxona</b>: Albino - Distribution kompaniyasi\n— <b>Manzil</b>: Toshkent shahar, Abu saxiy chinni bozori orqa tarafida joylashgan\n— <b>Oylik maosh</b>: 8 000 000 dan 12 000 000 gacha\n— <b>Telefon</b>: +998900481500\n— <b>Telegram</b>: @hr_albino_uzb\n\n<b>🔻</b> <b>Talablar</b>:\n— Yoshi 25 - 35 yoshgacha;\n— Suhbat asosida ishga qabul qilinadi ;\n— Passport bilan kelish.\n\n<b>🔻</b> <b>Takliflar</b>:\n— – Lavozim ko‘tarilishi imkoniyati;\n— – Rag‘batlantirishlar va KPI bonus tizimi mavjud;\n— – 3 mahal issiq ovqat;\n— – Yotoq-joy, ko‘rpa-to‘shak (konditsioner, kir yuvish mashinasi bor);\n— – Axil jamoa.\n\n📩 <b>Kanalga eʼlon joylash 👉</b> @Khazratov\n\n📌 @Finderuz — eng yuqori maoshlar!",
-   "title": "Supervayzerlar kerak! (Yigitlar)",
-   "salary": "8 000 000 dan 12 000 000 gacha"
-  },
   {
    "at": "2026-11-26T16:30:00+05:00",
    "src": "marketingdaishla/2094",
@@ -63,7 +56,7 @@
   }
  ],
  "queue_date": "2026-11-26",
- "last_sent": "2026-11-26T12:50:16.448976+05:00",
+ "last_sent": "2026-11-26T12:53:12.455430+05:00",
  "history": [
   {
    "at": "2026-11-19T08:21:14.633200+05:00",
@@ -309,6 +302,13 @@
    "src": "kasbim_uz/11157",
    "status": "sent",
    "kind": "auto"
+  },
+  {
+   "at": "2026-11-26T12:53:12.455430+05:00",
+   "title": "Supervayzerlar kerak! (Yigitlar)",
+   "src": "click_jobs/1842",
+   "status": "sent",
+   "kind": "auto"
   }
  ],
  "manual_done": {},
@@ -327,7 +327,8 @@
   "d7b19fb0ff5e4f26",
   "e9341d96cae9197e",
   "9169f145a65df86e",
-  "0cd05c8b986c83fa"
+  "0cd05c8b986c83fa",
+  "3a8e8bf2afa6189f"
  ],
  "rebuild_done": "1795543266679",
  "next_queue": [],
