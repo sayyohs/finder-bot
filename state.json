@@ -33,17 +33,10 @@
   "f16a6de568cf2ade9c7b4987be2d17c2": "2026-11-25",
   "fb60e5af37049a7c665dacedd05650ee": "2026-11-25",
   "d0b7edac13313f3be84806ec8cff825b": "2026-11-25",
-  "da3c2cc5f095952fbf8924c99ec0be01": "2026-11-26"
+  "da3c2cc5f095952fbf8924c99ec0be01": "2026-11-26",
+  "d540189a0a5732a794bbdfaf1caae5f6": "2026-11-26"
  },
  "queue": [
-  {
-   "at": "2026-11-26T11:30:00+05:00",
-   "src": "kasbim_uz/11157",
-   "fp": "d540189a0a5732a794bbdfaf1caae5f6",
-   "html": "<b>❗️ SMM manejer kerak</b>\n\n— <b>Korxona</b>: IT konpaniya\n— <b>Manzil</b>: Toshkent shahri\n— <b>Ish grafigi</b>: 10:00 - 18:00, 5/2\n— <b>Oylik maosh</b>: 700$-1200$\n— <b>Telefon</b>: (telegramdan yozing)\n\n<b>🔻</b> <b>Talablar</b>:\n— Kamida 1+ yillik ish tajribas\n— Natija ko&#x27;rsata oladigan bo&#x27;lishi kerak:\n— Ma’suliyatli bo’lishi kerak;\n— Taklif: — Kompaniya hisobidan tushlik;\n— O&#x27;sish va rivojlanish;\n\n📩 <b>Kanalga eʼlon joylash 👉</b> @Khazratov\n\n📌 @Finderuz — eng yuqori maoshlar!",
-   "title": "SMM manejer kerak",
-   "salary": "700$-1200$"
-  },
   {
    "at": "2026-11-26T14:00:00+05:00",
    "src": "click_jobs/1842",
@@ -70,7 +63,7 @@
   }
  ],
  "queue_date": "2026-11-26",
- "last_sent": "2026-11-26T09:02:13.078681+05:00",
+ "last_sent": "2026-11-26T12:50:16.448976+05:00",
  "history": [
   {
    "at": "2026-11-19T08:21:14.633200+05:00",
@@ -307,6 +300,13 @@
    "at": "2026-11-26T09:02:13.078681+05:00",
    "title": "Marketolog kerak",
    "src": "rizqimuz/10592",
+   "status": "sent",
+   "kind": "auto"
+  },
+  {
+   "at": "2026-11-26T12:50:16.448976+05:00",
+   "title": "SMM manejer kerak",
+   "src": "kasbim_uz/11157",
    "status": "sent",
    "kind": "auto"
   }
