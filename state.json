@@ -40,17 +40,10 @@
   "86d8a0bcdec36e035f28460544773e5f": "2026-11-26",
   "c8e395e9e7b3617c324fcbae951e3f27": "2026-11-27",
   "9ec9ad104bb0da52a192314cfb99fda3": "2026-11-27",
-  "88122ff0dbee889fc8456368670de2cf": "2026-11-27"
+  "88122ff0dbee889fc8456368670de2cf": "2026-11-27",
+  "0807a50edda0727590fa4b91d0ea0e96": "2026-11-27"
  },
  "queue": [
-  {
-   "at": "2026-11-27T15:00:00+05:00",
-   "src": "rizqimuz/10607",
-   "fp": "0807a50edda0727590fa4b91d0ea0e96",
-   "html": "<b>❗️ Professional mantajor qidirilmoqda! (online) kerak</b>\n\n— <b>Korxona</b>: FULFIL MCHJ\n— <b>Oylik maosh</b>: Video donasiga gaplashilinadi (+,-, $1000 gacha oylik )\n— <b>Telefon</b>: (telegramdan yozing)\n— <b>Telegram</b>: @mamatov05\n\n📩 <b>Kanalga eʼlon joylash 👉</b> @Khazratov\n\n📌 @Finderuz — eng yuqori maoshlar!",
-   "title": "Professional mantajor qidirilmoqda! (online) kerak",
-   "salary": "Video donasiga gaplashilinadi (+,-, $1000 gacha oylik )"
-  },
   {
    "at": "2026-11-27T17:00:00+05:00",
    "src": "marketingdaishla/2103",
@@ -69,7 +62,7 @@
   }
  ],
  "queue_date": "2026-11-27",
- "last_sent": "2026-11-27T12:52:07.364738+05:00",
+ "last_sent": "2026-11-27T15:33:52.969306+05:00",
  "history": [
   {
    "at": "2026-11-19T08:21:14.633200+05:00",
@@ -355,6 +348,13 @@
    "at": "2026-11-27T12:52:07.364738+05:00",
    "title": "Marketing bo‘limi rahbari kerak",
    "src": "marketingdaishla/2099",
+   "status": "sent",
+   "kind": "auto"
+  },
+  {
+   "at": "2026-11-27T15:33:52.969306+05:00",
+   "title": "Professional mantajor qidirilmoqda! (online) kerak",
+   "src": "rizqimuz/10607",
    "status": "sent",
    "kind": "auto"
   }
