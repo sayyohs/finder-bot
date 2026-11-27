@@ -41,17 +41,10 @@
   "c8e395e9e7b3617c324fcbae951e3f27": "2026-11-27",
   "9ec9ad104bb0da52a192314cfb99fda3": "2026-11-27",
   "88122ff0dbee889fc8456368670de2cf": "2026-11-27",
-  "0807a50edda0727590fa4b91d0ea0e96": "2026-11-27"
+  "0807a50edda0727590fa4b91d0ea0e96": "2026-11-27",
+  "8829224ee60b4b925506cf09bc1dfb21": "2026-11-27"
  },
  "queue": [
-  {
-   "at": "2026-11-27T17:00:00+05:00",
-   "src": "marketingdaishla/2103",
-   "fp": "8829224ee60b4b925506cf09bc1dfb21",
-   "html": "<b>❗️ MONTAJOR kerak</b>\n\n— <b>Manzil</b>: Toshkent shahri, Sergeli tumani\n— <b>Oylik maosh</b>: 6 000 000 dan 12 000 000 gacha ( +Bonus)\n— <b>Telefon</b>: (telegramdan yozing)\n— <b>Telegram</b>: @SERGELI_INDEX\n\n<b>🔻</b> <b>Talablar</b>:\n— Kreativ va zamonaviy usulda montaj qilish\n— Deadline’ga rioya qilish\n— Portfolio bilan murojaat qiling\n\n📩 <b>Kanalga eʼlon joylash 👉</b> @Khazratov\n\n📌 @Finderuz — eng yuqori maoshlar!",
-   "title": "MONTAJOR kerak",
-   "salary": "6 000 000 dan 12 000 000 gacha ( +Bonus)"
-  },
   {
    "at": "2026-11-27T19:00:00+05:00",
    "src": "marketingdaishla/2095",
@@ -62,7 +55,7 @@
   }
  ],
  "queue_date": "2026-11-27",
- "last_sent": "2026-11-27T15:33:52.969306+05:00",
+ "last_sent": "2026-11-27T17:34:47.146449+05:00",
  "history": [
   {
    "at": "2026-11-19T08:21:14.633200+05:00",
@@ -355,6 +348,13 @@
    "at": "2026-11-27T15:33:52.969306+05:00",
    "title": "Professional mantajor qidirilmoqda! (online) kerak",
    "src": "rizqimuz/10607",
+   "status": "sent",
+   "kind": "auto"
+  },
+  {
+   "at": "2026-11-27T17:34:47.146449+05:00",
+   "title": "MONTAJOR kerak",
+   "src": "marketingdaishla/2103",
    "status": "sent",
    "kind": "auto"
   }
