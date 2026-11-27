@@ -38,17 +38,10 @@
   "3a8e8bf2afa6189f80d2115ee642bfef": "2026-11-26",
   "7ff401b9be8ca2be5dbe1bf5b47db2b1": "2026-11-26",
   "86d8a0bcdec36e035f28460544773e5f": "2026-11-26",
-  "c8e395e9e7b3617c324fcbae951e3f27": "2026-11-27"
+  "c8e395e9e7b3617c324fcbae951e3f27": "2026-11-27",
+  "9ec9ad104bb0da52a192314cfb99fda3": "2026-11-27"
  },
  "queue": [
-  {
-   "at": "2026-11-27T11:00:00+05:00",
-   "src": "marketingdaishla/2098",
-   "fp": "9ec9ad104bb0da52a192314cfb99fda3",
-   "html": "<b>❗️ Videograf kerak</b>\n\n— <b>Manzil</b>: Toshkent shahri, Tinchlik metro bekati yaqinida\n— <b>Ish grafigi</b>: 6/1, to‘liq kun\n— <b>Oylik maosh</b>: 15 000 000 gacha\n— <b>Telefon</b>: (telegramdan yozing)\n\n<b>🔻</b> <b>Talablar</b>:\n— Video olish va montaj qilish bo‘yicha kamida 1 yillik tajriba\n— Premiere Pro va After Effects dasturlarida ishlay olish\n\n📩 <b>Kanalga eʼlon joylash 👉</b> @Khazratov\n\n📌 @Finderuz — eng yuqori maoshlar!",
-   "title": "Videograf kerak",
-   "salary": "15 000 000 gacha"
-  },
   {
    "at": "2026-11-27T13:00:00+05:00",
    "src": "marketingdaishla/2099",
@@ -83,7 +76,7 @@
   }
  ],
  "queue_date": "2026-11-27",
- "last_sent": "2026-11-27T09:39:41.852511+05:00",
+ "last_sent": "2026-11-27T11:49:19.473838+05:00",
  "history": [
   {
    "at": "2026-11-19T08:21:14.633200+05:00",
@@ -355,6 +348,13 @@
    "at": "2026-11-27T09:39:41.852511+05:00",
    "title": "SMM menejer kerak",
    "src": "marketingdaishla/2097",
+   "status": "sent",
+   "kind": "auto"
+  },
+  {
+   "at": "2026-11-27T11:49:19.473838+05:00",
+   "title": "Videograf kerak",
+   "src": "marketingdaishla/2098",
    "status": "sent",
    "kind": "auto"
   }
