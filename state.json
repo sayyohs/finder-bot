@@ -47,20 +47,12 @@
   "560615f7c9df3a93d688400eeffaf654": "2026-11-28",
   "064bc1810ebfbe3f3340acb8541391da": "2026-11-28",
   "9659e0c88ed0800f6b2e229e4d14da57": "2026-11-28",
-  "a3de8caaad91ea7f1294387b00c095f7": "2026-11-28"
+  "a3de8caaad91ea7f1294387b00c095f7": "2026-11-28",
+  "cde6337bc725d2aad7dee067583713ea": "2026-11-28"
  },
- "queue": [
-  {
-   "at": "2026-11-28T19:00:00+05:00",
-   "src": "rizqimuz/10616",
-   "fp": "cde6337bc725d2aad7dee067583713ea",
-   "html": "<b>❗️ SMM menejer kerak</b>\n\n— <b>Korxona</b>: GoodWell (maishiy texnika)\n— <b>Manzil</b>: Toshkent shahri\n— <b>Oylik maosh</b>: 8 000 000 dan 12 000 000 gacha\n— <b>Telefon</b>: (telegramdan yozing)\n\n<b>🔻</b> <b>Talablar</b>:\n— SMM sohasida kamida 1,5 yillik tajriba, maqsadli auditoriyani tahlil qilish ko‘nikmasi, jamoa bilan ishlash va vazifalarni to‘g‘ri taqsimlay olish, tashabbuskorlik hamda o‘zbek va rus tillarini bilish.\n\n📩 <b>Kanalga eʼlon joylash 👉</b> @Khazratov\n\n📌 @Finderuz — eng yuqori maoshlar!",
-   "title": "SMM menejer kerak",
-   "salary": "8 000 000 dan 12 000 000 gacha"
-  }
- ],
+ "queue": [],
  "queue_date": "2026-11-28",
- "last_sent": "2026-11-28T17:25:44.059120+05:00",
+ "last_sent": "2026-11-28T19:31:45.046323+05:00",
  "history": [
   {
    "at": "2026-11-19T08:21:14.633200+05:00",
@@ -395,6 +387,13 @@
    "at": "2026-11-28T17:25:44.059120+05:00",
    "title": "SMM menejer kerak",
    "src": "rizqimuz/10618",
+   "status": "sent",
+   "kind": "auto"
+  },
+  {
+   "at": "2026-11-28T19:31:45.046323+05:00",
+   "title": "SMM menejer kerak",
+   "src": "rizqimuz/10616",
    "status": "sent",
    "kind": "auto"
   }
