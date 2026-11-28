@@ -44,17 +44,10 @@
   "0807a50edda0727590fa4b91d0ea0e96": "2026-11-27",
   "8829224ee60b4b925506cf09bc1dfb21": "2026-11-27",
   "150a5512e93694bf614ce670591bb4b2": "2026-11-27",
-  "560615f7c9df3a93d688400eeffaf654": "2026-11-28"
+  "560615f7c9df3a93d688400eeffaf654": "2026-11-28",
+  "064bc1810ebfbe3f3340acb8541391da": "2026-11-28"
  },
  "queue": [
-  {
-   "at": "2026-11-28T11:30:00+05:00",
-   "src": "rizqimuz/10620",
-   "fp": "064bc1810ebfbe3f3340acb8541391da",
-   "html": "<b>❗️ Targetolog kerak</b>\n\n— <b>Korxona</b>: Marketing Agentlik\n— <b>Manzil</b>: Toshkent shahri , Chilonzor tumani\n— <b>Oylik maosh</b>: 8 000 000 dan 20 000 000 gacha\n— <b>Telefon</b>: (telegramdan yozing)\n— <b>Telegram</b>: @kornetto_20022\n\n<b>🔻</b> <b>Talablar</b>:\n— Vazifa va topshiriqlarni o’z vaqtida bajarish. Target yoqishni 100% bilishi. Faqat target yoqmasdan - marketing tadqiqot qilish (90%offer/10%nastroyka)\n— SMM va Targetolog mutaxassislarini boshqarish. Kontekst reklama\n— yoqish. Community yuritish va ijtimoiy tarmoqda faol bo’lish\n\n📩 <b>Kanalga eʼlon joylash 👉</b> @Khazratov\n\n📌 @Finderuz — eng yuqori maoshlar!",
-   "title": "Targetolog kerak",
-   "salary": "8 000 000 dan 20 000 000 gacha"
-  },
   {
    "at": "2026-11-28T14:00:00+05:00",
    "src": "rizqimuz/10622",
@@ -81,7 +74,7 @@
   }
  ],
  "queue_date": "2026-11-28",
- "last_sent": "2026-11-28T09:18:38.202454+05:00",
+ "last_sent": "2026-11-28T12:14:06.437494+05:00",
  "history": [
   {
    "at": "2026-11-19T08:21:14.633200+05:00",
@@ -395,6 +388,13 @@
    "at": "2026-11-28T09:18:38.202454+05:00",
    "title": "Call operator kerak",
    "src": "rizqimuz/10623",
+   "status": "sent",
+   "kind": "auto"
+  },
+  {
+   "at": "2026-11-28T12:14:06.437494+05:00",
+   "title": "Targetolog kerak",
+   "src": "rizqimuz/10620",
    "status": "sent",
    "kind": "auto"
   }
