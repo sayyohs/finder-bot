@@ -43,17 +43,10 @@
   "88122ff0dbee889fc8456368670de2cf": "2026-11-27",
   "0807a50edda0727590fa4b91d0ea0e96": "2026-11-27",
   "8829224ee60b4b925506cf09bc1dfb21": "2026-11-27",
-  "150a5512e93694bf614ce670591bb4b2": "2026-11-27"
+  "150a5512e93694bf614ce670591bb4b2": "2026-11-27",
+  "560615f7c9df3a93d688400eeffaf654": "2026-11-28"
  },
  "queue": [
-  {
-   "at": "2026-11-28T09:00:00+05:00",
-   "src": "rizqimuz/10623",
-   "fp": "560615f7c9df3a93d688400eeffaf654",
-   "html": "<b>❗️ Call operator kerak</b>\n\n— <b>Korxona</b>: MAGNIT LOGO\n— <b>Manzil</b>: Chilonzor metrosi oldida\n— <b>Ish grafigi</b>: 9:00 dan 21:00 gacha\n— <b>Oylik maosh</b>: 6 500 000 000 dan yuqori\n— <b>Telefon</b>: +998772867797\n— <b>Telegram</b>: @biznes_97\n\n<b>🔻</b> <b>Talablar</b>:\n— Onlayn ishlasangiz ham bo‘ladi. Bolalar va qizlarni ishga olamiz. amoCRM dasturini professional darajada tushunishingiz shart. Dasturni bilmasangiz, iltimos, bezovta qilmang. Yosh:20yoshdan 24yoshgacha\n\n📩 <b>Kanalga eʼlon joylash 👉</b> @Khazratov\n\n📌 @Finderuz — eng yuqori maoshlar!",
-   "title": "Call operator kerak",
-   "salary": "6 500 000 000 dan yuqori"
-  },
   {
    "at": "2026-11-28T11:30:00+05:00",
    "src": "rizqimuz/10620",
@@ -88,7 +81,7 @@
   }
  ],
  "queue_date": "2026-11-28",
- "last_sent": "2026-11-27T19:57:58.529999+05:00",
+ "last_sent": "2026-11-28T09:18:38.202454+05:00",
  "history": [
   {
    "at": "2026-11-19T08:21:14.633200+05:00",
@@ -397,6 +390,13 @@
    "src": "marketingdaishla/2095",
    "status": "sent",
    "kind": "auto"
+  },
+  {
+   "at": "2026-11-28T09:18:38.202454+05:00",
+   "title": "Call operator kerak",
+   "src": "rizqimuz/10623",
+   "status": "sent",
+   "kind": "auto"
   }
  ],
  "manual_done": {},
@@ -417,7 +417,8 @@
   "9169f145a65df86e",
   "0cd05c8b986c83fa",
   "3a8e8bf2afa6189f",
-  "88122ff0dbee889f"
+  "88122ff0dbee889f",
+  "560615f7c9df3a93"
  ],
  "rebuild_done": "1795543266679",
  "next_queue": [],
