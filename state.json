@@ -45,17 +45,10 @@
   "8829224ee60b4b925506cf09bc1dfb21": "2026-11-27",
   "150a5512e93694bf614ce670591bb4b2": "2026-11-27",
   "560615f7c9df3a93d688400eeffaf654": "2026-11-28",
-  "064bc1810ebfbe3f3340acb8541391da": "2026-11-28"
+  "064bc1810ebfbe3f3340acb8541391da": "2026-11-28",
+  "9659e0c88ed0800f6b2e229e4d14da57": "2026-11-28"
  },
  "queue": [
-  {
-   "at": "2026-11-28T14:00:00+05:00",
-   "src": "rizqimuz/10622",
-   "fp": "9659e0c88ed0800f6b2e229e4d14da57",
-   "html": "<b>❗️ Marketolog kerak</b>\n\n— <b>Korxona</b>: Perfect Consalting Group\n— <b>Manzil</b>: Offline. Toshkent shahri\n— <b>Oylik maosh</b>: 800$ - 1200$\n— <b>Telefon</b>: +998994441090\n— <b>Telegram</b>: @pcg_hrd\n\n<b>🔻</b> <b>Talablar</b>:\n— Internet marketing sohasida kamida 2 yil tajriba. Kreativ fikrlash va tashabbuskorlik. Analitik ko‘nikmalar. Jamoa bilan va mustaqil ishlash qobiliyati.  Portfolio talab qilinadi\n\n📩 <b>Kanalga eʼlon joylash 👉</b> @Khazratov\n\n📌 @Finderuz — eng yuqori maoshlar!",
-   "title": "Marketolog kerak",
-   "salary": "800$ - 1200$"
-  },
   {
    "at": "2026-11-28T16:30:00+05:00",
    "src": "rizqimuz/10618",
@@ -74,7 +67,7 @@
   }
  ],
  "queue_date": "2026-11-28",
- "last_sent": "2026-11-28T12:14:06.437494+05:00",
+ "last_sent": "2026-11-28T14:26:35.122709+05:00",
  "history": [
   {
    "at": "2026-11-19T08:21:14.633200+05:00",
@@ -395,6 +388,13 @@
    "at": "2026-11-28T12:14:06.437494+05:00",
    "title": "Targetolog kerak",
    "src": "rizqimuz/10620",
+   "status": "sent",
+   "kind": "auto"
+  },
+  {
+   "at": "2026-11-28T14:26:35.122709+05:00",
+   "title": "Marketolog kerak",
+   "src": "rizqimuz/10622",
    "status": "sent",
    "kind": "auto"
   }
