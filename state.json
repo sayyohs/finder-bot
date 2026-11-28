@@ -46,17 +46,10 @@
   "150a5512e93694bf614ce670591bb4b2": "2026-11-27",
   "560615f7c9df3a93d688400eeffaf654": "2026-11-28",
   "064bc1810ebfbe3f3340acb8541391da": "2026-11-28",
-  "9659e0c88ed0800f6b2e229e4d14da57": "2026-11-28"
+  "9659e0c88ed0800f6b2e229e4d14da57": "2026-11-28",
+  "a3de8caaad91ea7f1294387b00c095f7": "2026-11-28"
  },
  "queue": [
-  {
-   "at": "2026-11-28T16:30:00+05:00",
-   "src": "rizqimuz/10618",
-   "fp": "a3de8caaad91ea7f1294387b00c095f7",
-   "html": "<b>❗️ SMM menejer kerak</b>\n\n— <b>Korxona</b>: &#x27;&#x27;Aros&#x27;&#x27;\n— <b>Manzil</b>: Offline. Toshkent shahri\n— <b>Ish grafigi</b>: 6/1 .10;00 dan 18;00 gacha\n— <b>Oylik maosh</b>: 7 000 000 dan 15 000 000 gacha\n— <b>Telefon</b>: 507597770\n— <b>Telegram</b>: @HR_AROS\n\n<b>🔻</b> <b>Talablar</b>:\n— Bizga har bir vazifani aytib turishimizni kutadigan emas, o‘zi fikrlaydigan, tashabbus ko‘rsatadigan va brend rivoji uchun mas’uliyatni o‘z zimmasiga oladigan mutaxassis kerak.20 yoshdan 30 yoshgacha yigitlar SMM yonlaishida kamida 2 yillik tajriba\n\n📩 <b>Kanalga eʼlon joylash 👉</b> @Khazratov\n\n📌 @Finderuz — eng yuqori maoshlar!",
-   "title": "SMM menejer kerak",
-   "salary": "7 000 000 dan 15 000 000 gacha"
-  },
   {
    "at": "2026-11-28T19:00:00+05:00",
    "src": "rizqimuz/10616",
@@ -67,7 +60,7 @@
   }
  ],
  "queue_date": "2026-11-28",
- "last_sent": "2026-11-28T14:26:35.122709+05:00",
+ "last_sent": "2026-11-28T17:25:44.059120+05:00",
  "history": [
   {
    "at": "2026-11-19T08:21:14.633200+05:00",
@@ -395,6 +388,13 @@
    "at": "2026-11-28T14:26:35.122709+05:00",
    "title": "Marketolog kerak",
    "src": "rizqimuz/10622",
+   "status": "sent",
+   "kind": "auto"
+  },
+  {
+   "at": "2026-11-28T17:25:44.059120+05:00",
+   "title": "SMM menejer kerak",
+   "src": "rizqimuz/10618",
    "status": "sent",
    "kind": "auto"
   }
